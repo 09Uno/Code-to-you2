@@ -16,13 +16,13 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Criação de Páginas web", "Otimização de Sites", "Manutenção", "Personalização de Páginas"],
+         strings:["Criação de Páginas web", "Otimização de Sistemas", "Manutenção de Código", "Personalização de Páginas"],
          typeSpeed:100,
          backSpeed:60,
          loop:true
      });
      var typed = new Typed(".typing-2", {
-        strings:["Criação de Páginas web", "Otimização de Sites", "Manutenção", "Personalização de Páginas"],
+        strings:[""],
         typeSpeed:100,
         backSpeed:60,
         loop:true
