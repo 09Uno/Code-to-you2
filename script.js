@@ -16,7 +16,7 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Criação de Páginas web", "Otimização de Sistemas", "Manutenção de Código", "Personalização de Páginas"],
+         strings:["Páginas web completas", "Modificações em sites", "Correções de bugs", "Integrações de API's", "Otimizações em e-comerce"," e muito mais"],
          typeSpeed:100,
          backSpeed:60,
          loop:true
