@@ -92,12 +92,13 @@ html {
 
 .logo {
     margin-left: 20px;
+    max-height: 1200x;
+    
 }
 
 .logoImg {
 
-    height: 100px;
-    width: 93%;
+    height: 120px;
 }
 
 
