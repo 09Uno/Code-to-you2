@@ -16,8 +16,8 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Páginas web completas", "Modificação em sites", "Correção de bugs", "Integração de API's", "Otimização em e-comerce"," e muito mais..."],
-         typeSpeed:100,
+         strings:["Páginas web completas", "Modificações em sites", "Correção de bugs", "Integração de API's", "Otimizações em e-comerce"," e muito mais..."],
+         typeSpeed:100,                 
          backSpeed:60,
          loop:true
      });

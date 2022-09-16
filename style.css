@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+#me{
+
+
+height: 60px;
+}
+
 #vector {
     background: url("./image/vec.png");
     background-size: contain;
@@ -69,12 +75,13 @@ html {
     font-family: 'Ubuntu', sans-serif;
     z-index: 999;
     transition: all 0.3s ease;
-    background: rgba(109, 190, 233, 0.7);
+    background: rgba(109 190 233 / 25%);
 
 }
 
 .navbar.sticky {
-    background: rgb(109, 190, 233);
+    background: #2f9bda;
+
     padding: 15px 0;
 }
 
@@ -93,7 +100,7 @@ html {
 .logo {
     margin-left: 20px;
     max-height: 1200x;
-    
+
 }
 
 .logoImg {
@@ -125,7 +132,7 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: rgb(87 196 255);
+    color: rgb(75, 13, 81);
 }
 
 .navbar.sticky .menu li a:hover {
@@ -145,22 +152,23 @@ html {
 
 @media (max-width:974px) {
     .home {
-        background: url(image/A-fresh-perspective-on-PSD2.jpg);
+        background: url(image/360_F_505384197_5FSG2YzOGQAsI4mzNhGrgprv7byWH9Hg.jpg) no-repeat;
         background-size: cover;
-        background-position: center;
-        height:60vh;
+        height: 60vh;
         color: #fff;
         font-family: 'Ubuntu', sans-serif;
     }
 
-    .home .home-content .text-3 span{
+    .home .home-content .text-3 span {
         font-weight: 1000 !important;
         -webkit-stroke-color: #FFF !important
     }
 }
 
+
+
 .home .max-width {
-    margin: auto 0 auto 40px;
+    margin: auto 0 auto 20px;
     margin-top: 80px;
 }
 
@@ -340,7 +348,7 @@ footer {
     width: 400px;
     height: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 
 /*  sessão serviços */
@@ -709,8 +717,8 @@ footer span a:hover {
 
 @media (max-width: 1104px) {
     .about .about-content .left img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 }
 
