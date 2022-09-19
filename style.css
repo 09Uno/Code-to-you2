@@ -530,20 +530,23 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 0;
+    font-size: 15px;
+    color: rgba(17, 17, 17, 0);
+
 
 }
 
 .teams .carousel .card:hover .box {
     transform: scale(1.2);
     font-size: 15px;
-    color: rgb(82, 131, 204);
+    color: #6f3b74;
     font-weight: 600;
     background-color: rgba(237, 237, 237, 0.854);
     border-radius: 2px;
     padding: 5px;
-    border: solid black 1px;
     min-height: 200px;
+    transition: all 0.3s ease 0s;
+
 }
 
 .teams .carousel .card .text {
