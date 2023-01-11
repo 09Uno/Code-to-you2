@@ -52,4 +52,57 @@ $(document).ready(function(){
             }
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
+
+document.querySelector("#submit").addEventListener("click", e => {
+    e.preventDefault();
+  
+    //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
+    const telefono = 5571999941690;
+  
+    const cliente = document.querySelector("#cliente").value;
+    const mensagem = document.querySelector("#mensagem").value;
+    const resp = document.querySelector("#respuesta");
+  
+    resp.classList.remove("fail");
+    resp.classList.remove("send");
+  
+    const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
+        Code To You!%0A
+        Seu nome:%0A
+          ${cliente}%0A
+        Mensagem:%0A
+          ${mensagem}%0A
+      `;
+  
+    
+    resp.classList.remove("fail");
+    resp.classList.add("send");
+    resp.innerHTML = `Mensagem enviada! Te responderemos em breve`;
+  
+    window.open(url);
+  });
+  
