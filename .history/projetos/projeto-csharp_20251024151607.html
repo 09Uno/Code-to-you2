@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Caso: Microsserviço Financeiro C#/.NET</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="projeto.css"> 
+    <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo"><a href="../index.html">Portfólio <span>Técnico</span></a></div>
+            <ul class="menu">
+                <li><a href="../index.html#home">Credenciais</a></li>
+                <li><a href="../index.html#skills">Domínio</a></li>
+                <li><a href="../index.html#portfolio">Projetos</a></li>
+                <li><a href="../index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="max-width">
+            <h1 class="title">Microsserviço Financeiro C#/.NET <br> <span>API RESTful de Alta Disponibilidade com CQRS</span></h1>
+
+            <div class="overview-section">
+                <div class="info-box">
+                    <h2>🚀 Visão Geral e Contexto</h2>
+                    <p>Desenvolvimento de um microsserviço crítico para gerenciar transações financeiras e contas de usuários. O projeto utilizou **.NET 8** e implementou o padrão **CQRS (Command Query Responsibility Segregation)** para garantir a escalabilidade e a separação de responsabilidades entre operações de leitura (Queries) e escrita (Commands).</p>
+                    
+                    <h3>🛠️ Stack de Tecnologias e Metodologias</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> **Linguagem/Framework:** C#, .NET 8 (ASP.NET Core Web API)</li>
+                        <li><i class="fas fa-database"></i> **Banco de Dados:** SQL Server (via Entity Framework Core)</li>
+                        <li><i class="fas fa-puzzle-piece"></i> **Padrões:** CQRS (utilizando MediatR), Clean Architecture.</li>
+                        <li><i class="fas fa-flask"></i> **Testes:** Testes unitários com XUnit e Moq, cobertura de 90%.</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="LINK_DA_DOCUMENTACAO_SWAGGER" target="_blank" class="btn-demo"><i class="fas fa-desktop"></i> Ver Documentação (Swagger)</a>
+                        <a href="LINK_DO_REPOSITORIO_GITHUB" target="_blank" class="btn-github"><i class="fab fa-github"></i> Código Fonte</a>
+                    </div>
+                </div>
+
+                <div class="image-box">
+                    <img src="../image/projeto-csharp-main-mockup.jpg" alt="Mockup Principal do Projeto C# .NET">
+                </div>
+            </div>
+
+            <h2>💡 Desafios Técnicos e Minhas Soluções</h2>
+            <div class="challenge-section-wrapper">
+                <div class="challenge-pair">
+                    <div class="challenge-card">
+                        <h3>1. Desafio: Transações Concorrentes</h3>
+                        <p>Lidar com um alto volume de comandos concorrentes (depósitos/saques) que poderiam levar a condições de corrida e inconsistência de dados no saldo.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Solução: Pattern Command e Bloqueio Otimista</h3>
+                        <p>Utilizei o padrão Command (do CQRS) e implementei **Bloqueio Otimista** (Row Versioning) no Entity Framework Core para garantir que as transações fossem atômicas e serializáveis, prevenindo a perda de dados concorrentes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>🎥 Tour Completo: Assista à Demonstração em Vídeo</h2>
+                <p>Neste vídeo, demonstro a execução dos comandos e queries via Swagger UI, mostrando a baixa latência e a separação lógica das responsabilidades de leitura e escrita.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="Demonstração do Projeto C#" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2>📈 Resultados Alcançados e Impacto do Projeto</h2>
+                <ul>
+                    <li><i class="fas fa-chart-line"></i> **Escalabilidade:** Separação entre base de leitura e escrita permite processar **+500 transações/s**.</li>
+                    <li><i class="fas fa-bolt"></i> **Performance:** Queries de leitura 30% mais rápidas devido à otimização de DTOs e indexação.</li>
+                    <li><i class="fas fa-shield-alt"></i> **Robustez:** Cobertura de testes unitários de 90% para lógica de negócios crítica.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Desenvolvido por <a href="../index.html#home">PREENCHER SEU NOME</a> | <span class="far fa-copyright"></span> 2024 Todos os direitos reservado.</span>
+    </footer>
+</body>
+</html>

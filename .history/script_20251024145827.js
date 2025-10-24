@@ -16,13 +16,19 @@ $(document).ready(function(){
     // Animação de Scroll ao clicar no botão
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        $('html').css("scrollBehavior", "auto"); 
+        $('html').css("scrollBehavior", "auto"); // Reset para evitar conflitos
     });
 
     // Efeito de Digitação (Typing Effect)
     var typedHome = new Typed(".typing", {     
-        strings:["Inteligência Artificial", "Sistemas C#/.NET", "Automação", "Software Robusto"],
+        strings:["Desenvolvedor Full-Stack", "Arquiteto de Soluções", "Especialista em Cloud", "Inovador Tecnológico"],
         typeSpeed:100,                 
+        backSpeed:60,
+        loop:true
+    });
+    var typedAbout = new Typed(".typing-2", {
+        strings:["[Sua Área de Atuação, ex: Desenvolvedor Full-Stack]", "[Sua Tecnologia Principal, ex: Engenheiro de Software]"],
+        typeSpeed:100,
         backSpeed:60,
         loop:true
     });
@@ -37,7 +43,7 @@ $(document).ready(function(){
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
-        autoplayTimeOut: 3000, 
+        autoplayTimeOut: 3000, // Tempo maior
         autoplayHoverPause: true,
         responsive: {
             0:{

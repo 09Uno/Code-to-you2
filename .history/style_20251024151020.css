@@ -1,0 +1,65 @@
+/* ... (Todo o CSS anterior da Versão 2.0 deve ser mantido) ... */
+
+/* Estilo para a NOVA Seção de Contato (Sem Formulário) */
+
+.contact { 
+    background: var(--primary-color); 
+    color: var(--text-light);
+    text-align: center; /* Centraliza a seção */
+}
+.contact .title { color: var(--text-light); }
+.contact .title::after { 
+    content: "profissional"; 
+    background: var(--primary-color); 
+    color: var(--accent-color); 
+}
+.contact .contact-content.simple-contact {
+    display: flex;
+    justify-content: center; /* Centraliza o bloco de ícones */
+    align-items: flex-start;
+}
+.contact .contact-content .icons {
+    width: 100%;
+    max-width: 500px; /* Limita a largura dos ícones */
+    margin: 40px auto 0;
+    padding: 20px;
+    background: var(--dark-bg);
+    border-radius: 10px;
+}
+.contact .contact-content .icons .row {
+    margin-bottom: 20px;
+}
+.contact .contact-content .icons .row:last-child {
+    margin-bottom: 0;
+}
+.contact .contact-content .icons .row i { 
+    font-size: 28px; 
+    color: var(--accent-color); 
+    margin-right: 20px;
+}
+.contact .contact-content .icons .row .info {
+    text-align: left;
+}
+.contact .contact-content .icons .row .info .head { 
+    font-weight: 600; 
+    font-size: 18px; 
+    color: var(--text-light);
+}
+.contact .contact-content .icons .row .info .sub-title { color: #BBB; }
+.contact .contact-content .icons .row .info .sub-title a {
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+.contact .contact-content .icons .row .info .sub-title a:hover {
+    text-decoration: underline;
+}
+
+/* Título do Portfólio (Ajuste de Linguagem) */
+.portfolio .title::after { 
+    content: "estudos de caso"; 
+    background: var(--light-bg); 
+}
+
+/* Removendo regras antigas de formulário (apenas para limpeza se existirem) */
+.contact .column, .contact .right { width: 100%; }
+.contact .right form, .contact .text { display: none; }

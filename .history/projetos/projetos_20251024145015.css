@@ -1,0 +1,209 @@
+/* Importação de Fontes (Já está no style.css, mas é bom ter aqui) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Variáveis de Cores (Importadas do style.css) */
+:root {
+    --primary-color: #4CAF50; /* Verde Principal */
+    --secondary-color: #1E4620; /* Verde Escuro */
+    --light-bg: #E8F5E9; /* Fundo Claro */
+    --dark-bg: #FFFFFF; /* Fundo Branco */
+    --text-color: #333333;
+    --white-text: #FFFFFF;
+}
+
+/* Estilo da Seção de Detalhe do Projeto */
+.project-detail {
+    padding: 120px 0 80px 0; /* Espaço para a navbar fixa */
+    background: linear-gradient(180deg, var(--dark-bg) 0%, var(--light-bg) 100%);
+}
+.project-detail .max-width {
+    padding-top: 50px;
+}
+.project-detail .title {
+    color: var(--secondary-color);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.project-detail h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.project-detail h3 {
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.project-detail p, .project-detail li {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+}
+.project-detail ul {
+    list-style: none;
+    padding-left: 0;
+}
+.project-detail ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+.project-detail ul li i {
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Visão Geral e Imagem */
+.overview-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+.overview-section .info-box {
+    width: 60%;
+    padding: 30px;
+    background: var(--dark-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.overview-section .image-box {
+    width: 40%;
+    text-align: center;
+}
+.overview-section .image-box img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Links do Projeto */
+.project-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.project-links a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn-demo {
+    background: var(--primary-color);
+    color: var(--white-text);
+    border: 2px solid var(--primary-color);
+}
+.btn-demo:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.btn-github {
+    background: none;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+.btn-github:hover {
+    background: var(--secondary-color);
+    color: var(--white-text);
+}
+
+/* Desafios e Soluções (Em Colunas) */
+.challenge-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.challenge-card, .solution-card {
+    flex: 1;
+    padding: 25px;
+    border-radius: 10px;
+}
+.challenge-card {
+    background: #FFEBEE; /* Fundo Suave para Desafio (Quase Vermelho) */
+    border-left: 5px solid #E53935;
+}
+.solution-card {
+    background: #E8F5E9; /* Fundo Suave para Solução (Verde Claro) */
+    border-left: 5px solid var(--primary-color);
+}
+.challenge-card h3, .solution-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+/* Demonstração de Uso (Vídeo) */
+.demo-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Resultados */
+.result-section {
+    background: var(--secondary-color);
+    color: var(--white-text);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.result-section h2 {
+    color: var(--white-text);
+    border-bottom-color: var(--primary-color);
+    text-align: center;
+}
+.result-section ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.result-section ul li {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-text);
+    text-align: left;
+    width: auto;
+    min-width: 250px;
+    margin: 10px 0;
+}
+.result-section ul li i {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+/* Responsividade da Página de Projeto */
+@media (max-width: 991px) {
+    .overview-section { flex-direction: column; }
+    .overview-section .info-box, .overview-section .image-box { width: 100%; }
+    .challenge-section { flex-direction: column; }
+    .result-section ul { flex-direction: column; align-items: flex-start; }
+    .project-links { flex-direction: column; gap: 10px; }
+}

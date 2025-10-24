@@ -185,11 +185,11 @@ img { max-width: 100%; height: auto; }
 }
 
 
+/* Home Section (Credenciais) */
 .home {
     display: flex;
-    /* NOVO: Imagem de fundo com sobreposição de cor */
     background: linear-gradient(rgba(42, 47, 79, 0.85), rgba(42, 47, 79, 0.85)), url('./image/background-tech-dark.jpg') no-repeat center center/cover;
-    background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+    background-attachment: fixed; 
     height: 100vh;
     color: var(--text-light);
     min-height: 600px;
@@ -198,7 +198,6 @@ img { max-width: 100%; height: auto; }
     align-items: center;
     text-align: center;
 }
-/* ... (o restante do CSS da seção .home permanece o mesmo) ... */
 .home .home-content .text-1 { font-size: 32px; font-weight: 500; }
 .home .home-content .text-2 { font-size: 85px; font-weight: 700; margin: 10px 0; font-family: 'Montserrat', sans-serif; }
 .home .home-content .text-3 { font-size: 45px; margin: 10px 0 40px 0; font-weight: 600; }

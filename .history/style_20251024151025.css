@@ -5,14 +5,14 @@
 
 /* Variáveis de Cores - Nova Paleta Tech */
 :root {
-    --primary-color: #2A2F4F;   
-    --secondary-color: #4B5D78; 
-    --accent-color: #79DE79;    
-    --light-bg: #F2F4F8;        
-    --dark-bg: #1A1E31;         
-    --text-dark: #333333;       
-    --text-light: #FFFFFF;      
-    --border-color: #E0E0E0;    
+    --primary-color: #2A2F4F;   /* Azul Escuro/Roxo - Fundo principal, títulos importantes */
+    --secondary-color: #4B5D78; /* Azul Médio/Índigo - Destaques, cards, textos secundários */
+    --accent-color: #79DE79;    /* Verde Limão Vibrante - Hover, ícones, spans de destaque */
+    --light-bg: #F2F4F8;        /* Cinza Muito Claro - Fundos de seções claras */
+    --dark-bg: #1A1E31;         /* Azul Muito Escuro - Variação do primário para contraste */
+    --text-dark: #333333;       /* Texto em fundos claros */
+    --text-light: #FFFFFF;      /* Texto em fundos escuros */
+    --border-color: #E0E0E0;    /* Cor de borda suave */
     --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
     --shadow-dark: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
@@ -37,16 +37,16 @@ body {
     margin: auto; 
 }
 section { 
-    padding: 100px 0; 
+    padding: 100px 0; /* Maior espaçamento entre seções */
     position: relative;
-    overflow: hidden; 
+    overflow: hidden; /* Para garantir que elementos flutuantes não saiam */
 }
 .title {
     text-align: center;
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 48px; 
-    font-weight: 700; 
-    margin-bottom: 70px; 
+    font-family: 'Montserrat', sans-serif; /* Fonte mais moderna para títulos */
+    font-size: 48px; /* Títulos maiores */
+    font-weight: 700; /* Mais impacto */
+    margin-bottom: 70px; /* Maior espaçamento */
     padding-bottom: 25px;
     position: relative;
     color: var(--primary-color);
@@ -58,20 +58,20 @@ section.dark .title { color: var(--text-light); }
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 120px; 
-    height: 4px; 
-    background: var(--accent-color); 
+    width: 120px; /* Linha um pouco menor para sofisticação */
+    height: 4px; /* Mais grossa */
+    background: var(--accent-color); /* Linha vibrante */
     transform: translateX(-50%);
     border-radius: 2px;
 }
 .title::after {
     position: absolute;
-    bottom: -15px; 
+    bottom: -15px; /* Mais abaixo */
     left: 50%;
-    font-size: 20px; 
+    font-size: 20px; /* Tamanho maior */
     color: var(--secondary-color);
-    padding: 0 10px; 
-    background: var(--light-bg); /* Padrão: Fundo Claro */
+    padding: 0 10px; /* Mais padding */
+    background: var(--light-bg); /* Fundo da seção */
     transform: translateX(-50%);
     font-weight: 500;
 }
@@ -119,49 +119,45 @@ img { max-width: 100%; height: auto; }
 }
 
 
-/* Navbar Style - EFEITO BLUR APLICADO */
+/* Navbar Style */
 .navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 25px 0; 
     transition: all 0.4s ease;
-    /* 🎨 Fundo semi-transparente para o efeito Blur/Glassmorphism */
-    background: rgba(42, 47, 79, 0.7); 
-    
-    /* ⚙️ Aplica o efeito de desfoque (Blur) */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); 
-    
-    color: var(--text-light); 
+    background: transparent;
 }
-
-/* Navbar Sticky - Fundo Sólido ao Rolar */
 .navbar.sticky {
-    background: var(--primary-color); 
+    background: var(--primary-color);
     padding: 18px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    /* Remove o filtro Blur quando a cor é sólida */
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar .logo a {
-    color: var(--text-light);
+    color: var(--text-dark);
     font-size: 32px; 
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
+.navbar.sticky .logo a { color: var(--text-light); }
 .navbar .logo a span { color: var(--accent-color); transition: all 0.3s ease; }
+.navbar.sticky .logo a span { color: var(--accent-color); } 
 .navbar .menu li { list-style: none; display: inline-block; }
 .navbar .menu li a {
     display: block;
-    color: var(--text-light); /* Links brancos/claros sobre o fundo escuro */
+    color: var(--text-dark);
     font-size: 17px;
     font-weight: 500;
     margin-left: 30px; 
     transition: color 0.3s ease;
     position: relative;
 }
+.navbar.sticky .menu li a { color: var(--text-light); }
 .navbar .menu li a::after { 
     content: '';
     position: absolute;
@@ -178,18 +174,20 @@ img { max-width: 100%; height: auto; }
 
 /* Menu Mobile */
 .menu-btn { 
-    color: var(--text-light); 
+    color: var(--text-dark); 
     font-size: 26px; 
     cursor: pointer; 
     display: none; 
 }
+.navbar.sticky .menu-btn { color: var(--text-light); }
 
 
+/* Home Section (Credenciais) */
 .home {
     display: flex;
-    /* NOVO: Imagem de fundo com sobreposição de cor */
+    /* Coloque sua imagem de fundo aqui */
     background: linear-gradient(rgba(42, 47, 79, 0.85), rgba(42, 47, 79, 0.85)), url('./image/background-tech-dark.jpg') no-repeat center center/cover;
-    background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+    background-attachment: fixed; 
     height: 100vh;
     color: var(--text-light);
     min-height: 600px;
@@ -198,7 +196,6 @@ img { max-width: 100%; height: auto; }
     align-items: center;
     text-align: center;
 }
-/* ... (o restante do CSS da seção .home permanece o mesmo) ... */
 .home .home-content .text-1 { font-size: 32px; font-weight: 500; }
 .home .home-content .text-2 { font-size: 85px; font-weight: 700; margin: 10px 0; font-family: 'Montserrat', sans-serif; }
 .home .home-content .text-3 { font-size: 45px; margin: 10px 0 40px 0; font-weight: 600; }
@@ -206,6 +203,7 @@ img { max-width: 100%; height: auto; }
     color: var(--accent-color); 
     font-weight: 700; 
 }
+/* Lista de Credenciais */
 .home .home-content .credencial-list {
     display: flex;
     justify-content: center;
@@ -244,6 +242,10 @@ img { max-width: 100%; height: auto; }
 .home .home-content .btn-primary {
     margin-top: 20px;
 }
+
+
+/* About Section (Removida no CV) */
+.about { display: none; } 
 
 
 /* Skills Section (Competências Técnicas) */
@@ -300,7 +302,7 @@ img { max-width: 100%; height: auto; }
 .skills .serv-content .card p { 
     font-size: 16px; 
     flex-grow: 1;
-    text-align: left; 
+    text-align: left; /* Alinhamento esquerdo para listar as skills */
 }
 .skills .description-text {
     text-align: center;
@@ -316,10 +318,7 @@ img { max-width: 100%; height: auto; }
 
 /* Portfolio Section (Projetos) */
 .portfolio { background: var(--light-bg); }
-.portfolio .title::after { 
-    content: "estudos de caso"; 
-    background: var(--light-bg); /* 🎨 Corrigido: Garante que o fundo do subtítulo seja o mesmo da seção */
-}
+.portfolio .title::after { content: "estudos de caso"; background: var(--light-bg); }
 .portfolio .carousel .project-card {
     position: relative;
     height: 350px; 
@@ -418,45 +417,27 @@ img { max-width: 100%; height: auto; }
 .portfolio .text-center { margin-top: 60px; }
 
 
-/* Contact Section (Sem Formulário) */
+/* Contact Section */
 .contact { 
     background: var(--primary-color); 
     color: var(--text-light);
-    text-align: center; 
 }
 .contact .title { color: var(--text-light); }
-.contact .title::after { 
-    content: "profissional"; 
-    background: var(--primary-color); 
-    color: var(--accent-color); 
+.contact .title::after { content: "fale comigo"; background: var(--primary-color); color: var(--accent-color); }
+.contact .contact-content { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+.contact .contact-content .column { width: calc(50% - 30px); }
+.contact .contact-content .text { 
+    font-size: 24px; 
+    font-weight: 600; 
+    margin-bottom: 20px; 
+    color: var(--accent-color);
 }
-.contact .contact-content.simple-contact {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-}
-.contact .contact-content .icons {
-    width: 100%;
-    max-width: 500px; 
-    margin: 40px auto 0;
-    padding: 20px;
-    background: var(--dark-bg);
-    border-radius: 10px;
-    box-shadow: var(--shadow-dark);
-}
-.contact .contact-content .icons .row {
-    margin-bottom: 20px;
-}
-.contact .contact-content .icons .row:last-child {
-    margin-bottom: 0;
-}
+.contact .contact-content p { margin-bottom: 25px; }
+.contact .contact-content .icons .row { display: flex; align-items: center; margin-bottom: 15px; }
 .contact .contact-content .icons .row i { 
-    font-size: 28px; 
+    font-size: 25px; 
     color: var(--accent-color); 
     margin-right: 20px;
-}
-.contact .contact-content .icons .row .info {
-    text-align: left;
 }
 .contact .contact-content .icons .row .info .head { 
     font-weight: 600; 
@@ -464,12 +445,35 @@ img { max-width: 100%; height: auto; }
     color: var(--text-light);
 }
 .contact .contact-content .icons .row .info .sub-title { color: #BBB; }
-.contact .contact-content .icons .row .info .sub-title a {
-    color: var(--accent-color);
+
+/* Contact Form */
+.contact .right form .fields { display: flex; gap: 20px; margin-bottom: 20px; }
+.contact .right form .field { flex: 1; height: 50px; } 
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--secondary-color); 
+    background: var(--dark-bg); 
+    color: var(--text-light);
+    border-radius: 8px;
+    outline: none;
+    padding: 0 18px; 
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
-.contact .contact-content .icons .row .info .sub-title a:hover {
-    text-decoration: underline;
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: var(--accent-color); 
+    box-shadow: 0 0 8px rgba(var(--accent-color-rgb), 0.5); 
+}
+.contact .right form .textarea { height: 180px; margin-bottom: 20px; } 
+.contact .right form .textarea textarea { padding-top: 15px; resize: vertical; }
+
+.contact .right form .button-area { text-align: right; }
+.contact .right form .button-area .btn-primary {
+    padding: 14px 40px;
 }
 
 
@@ -513,7 +517,8 @@ footer span a:hover { text-decoration: underline; }
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsividade e Media Queries (Manter o restante do código responsivo) */
+
+/* Responsive Media Queries */
 @media (max-width: 1300px) {
     .home .max-width { margin-left: 0; }
 }
@@ -554,8 +559,11 @@ footer span a:hover { text-decoration: underline; }
     .portfolio .carousel .project-card { height: 280px; } 
 
     .contact .contact-content { flex-direction: column; align-items: center; }
-    .contact .contact-content .icons { max-width: 100%; }
-
+    .contact .contact-content .column { width: 100%; margin-bottom: 50px; }
+    .contact .right form .fields { flex-direction: column; gap: 0; }
+    .contact .right form .field { margin-bottom: 15px; }
+    .contact .right form .button-area { text-align: center; }
+    .contact .right form .button-area .btn-primary { width: 100%; max-width: 300px; }
 }
 
 @media (max-width: 690px) {
@@ -565,6 +573,10 @@ footer span a:hover { text-decoration: underline; }
     .title::after { font-size: 18px; }
     .skills .serv-content .card { width: 100%; } 
     .portfolio .carousel .project-card { height: 250px; }
+    .portfolio .carousel .project-card .card-overlay h3 { font-size: 24px; }
+    .scroll-up-btn, .whatsapp-btn { width: 45px; height: 45px; font-size: 22px; line-height: 45px; }
+    .scroll-up-btn.show { bottom: 80px; }
+    .whatsapp-btn { bottom: 25px; }
 }
 
 @media (max-width: 500px) {

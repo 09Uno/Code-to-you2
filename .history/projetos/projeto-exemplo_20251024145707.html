@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Detalhado - [NOME DO PROJETO]</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="projeto.css"> 
+    <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo"><a href="../index.html">Portfólio <span>[SEU NOME]</span></a></div>
+            <ul class="menu">
+                <li><a href="../index.html#home">Início</a></li>
+                <li><a href="../index.html#portfolio">Portfólio</a></li>
+                <li><a href="../index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="max-width">
+            <h1 class="title">Nome Completo do Projeto (Tipo: E-commerce, API, Landing Page)</h1>
+
+            <div class="overview-section">
+                <div class="info-box">
+                    <h2>🚀 Visão Geral e Contexto</h2>
+                    <p>Este projeto foi desenvolvido para a [Nome da Empresa/Cliente], uma startup no setor de [Setor]. O principal objetivo era criar uma plataforma [tipo de plataforma] capaz de [explicar a função principal]. O desafio era garantir uma interface amigável e uma alta performance, mesmo com um grande volume de dados.</p>
+                    
+                    <h3>🛠️ Stack de Tecnologias (Documentação Técnica)</h3>
+                    <ul>
+                        <li><i class="fab fa-react"></i> **Front-end Principal:** React.js com Redux para gerenciamento de estado.</li>
+                        <li><i class="fab fa-node-js"></i> **Back-end/API:** Node.js (Express) com arquitetura RESTful.</li>
+                        <li><i class="fas fa-database"></i> **Banco de Dados:** PostgreSQL (Modelo relacional otimizado).</li>
+                        <li><i class="fab fa-aws"></i> **Infraestrutura:** Deploy na AWS (S3 e EC2) com pipeline CI/CD.</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="LINK_DO_SITE_DEMO" target="_blank" class="btn-demo"><i class="fas fa-eye"></i> Visitar Site/Demo</a>
+                        <a href="LINK_DO_REPOSITORIO_GITHUB" target="_blank" class="btn-github"><i class="fab fa-github"></i> Repositório/Código</a>
+                    </div>
+                </div>
+
+                <div class="image-box">
+                    <img src="../image/projeto-principal-mockup.jpg" alt="Mockup Principal do Projeto">
+                </div>
+            </div>
+
+            <h2>💡 Desafios Encontrados e Minhas Soluções</h2>
+            <div class="challenge-section">
+                <div class="challenge-card">
+                    <h3>Desafio 1: Escalabilidade da API</h3>
+                    <p>O volume esperado de requisições era alto (cerca de 1000/min). A arquitetura inicial com MongoDB estava apresentando lentidão em consultas complexas.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Solução 1: Otimização e Migração</h3>
+                    <p>Refatoração da API para o PostgreSQL, focando em otimizações de índices e *queries*. Implementação de um cache Redis para dados frequentemente acessados, reduzindo o tempo de resposta em 75%.</p>
+                </div>
+            </div>
+             <div class="challenge-section">
+                <div class="challenge-card">
+                    <h3>Desafio 2: Experiência do Usuário (UX)</h3>
+                    <p>A navegação do e-commerce estava confusa, com uma alta taxa de abandono no carrinho de compras (35% de queda).</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Solução 2: Redesign e Fluxo</h3>
+                    <p>Realizei um redesign "Mobile First", simplificando o processo de checkout em apenas duas etapas. Otimizei o carregamento de imagens (lazy loading) e implementei filtros de produtos mais intuitivos.</p>
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>🎥 Demonstração Completa de Uso</h2>
+                <p>Veja o projeto em funcionamento, navegando pelas principais funcionalidades e mostrando o design responsivo.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Demonstração do Projeto" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2>📈 Resultados e Métricas Chave</h2>
+                <ul>
+                    <li><i class="fas fa-chart-line"></i> Aumento de <strong>40%</strong> na conversão do formulário/compra.</li>
+                    <li><i class="fas fa-bolt"></i> Tempo de Carregamento reduzido em <strong>2.5s</strong>.</li>
+                    <li><i class="fas fa-users"></i> Redução de <strong>35%</strong> na taxa de abandono de carrinho.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Criado por <a href="../index.html#home">SEU NOME</a> | <span class="far fa-copyright"></span> 2024 Todos os direitos reservados.</span>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Caso: Modelo NLP de Análise de Sentimento</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="projeto.css"> 
+    <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo"><a href="../index.html">Portfólio <span>Técnico</span></a></div>
+            <ul class="menu">
+                <li><a href="../index.html#home">Credenciais</a></li>
+                <li><a href="../index.html#skills">Domínio</a></li>
+                <li><a href="../index.html#portfolio">Projetos</a></li>
+                <li><a href="../index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="max-width">
+            
+            <h1 class="project-title-main">Processamento de Linguagem Natural (NLP) <br> <span>Modelo de Análise de Sentimento em Tempo Real</span></h1>
+
+            <div class="media-showcase-section">
+                <div class="video-container large">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Placeholder Video Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="side-gallery-showcase">
+                    <img src="https://via.placeholder.com/350x200?text=Mockup+Principal" alt="Mockup Principal do Projeto IA NLP">
+                    <img src="https://via.placeholder.com/350x200?text=Grafico+de+Treinamento" alt="Gráfico de Treinamento">
+                    <img src="https://via.placeholder.com/350x200?text=Exemplo+de+Codigo" alt="Exemplo de Código Python">
+                </div>
+            </div>
+
+            <div class="project-summary-bar">
+                <div class="quick-results">
+                    <span><i class="fas fa-chart-bar"></i> Acurácia: 93.5%</span>
+                    <span><i class="fas fa-bolt"></i> Latência: &lt; 100ms</span>
+                    <span><i class="fab fa-python"></i> Stack: PyTorch, Python</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn-demo"><i class="fas fa-desktop"></i> Ver Demonstração</a>
+                    <a href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO" target="_blank" class="btn-github"><i class="fab fa-github"></i> Código Fonte</a>
+                </div>
+            </div>
+            
+            <div class="content-wrapper">
+                
+                <div class="overview-details">
+                    <h2><i class="fas fa-book-open"></i> Documentação Técnica e Contexto do Projeto</h2>
+                    <p>Este projeto foi desenvolvido como uma Prova de Conceito (PoC) para demonstrar a capacidade de aplicar técnicas de Deep Learning (LSTM) em PyTorch para classificar o sentimento de textos (reviews, comentários) com alta precisão e baixa latência. O foco era na otimização do pré-processamento de texto em Português e na estabilidade do <em>deployment</em> via API.</p>
+                    <p>A solução envolveu a criação de um <em>pipeline</em> completo de ML, desde a ingestão e limpeza dos dados até a quantização e <em>deployment</em> final do modelo em um contêiner Docker, pronto para ser consumido por microsserviços.</p>
+                </div>
+                
+                <div class="tech-stack-section">
+                    <h2><i class="fas fa-tools"></i> Stack de Tecnologias Utilizadas</h2>
+                    <ul>
+                        <li><i class="fab fa-python"></i> <strong>Linguagem Principal:</strong> Python 3.10</li>
+                        <li><i class="fas fa-microchip"></i> <strong>Frameworks ML:</strong> PyTorch, Pandas, Scikit-learn.</li>
+                        <li><i class="fas fa-server"></i> <strong>Deployment:</strong> API RESTful com Flask e Gunicorn.</li>
+                        <li><i class="fab fa-docker"></i> <strong>Infraestrutura:</strong> Docker para conteinerização e deployment.</li>
+                    </ul>
+                </div>
+
+                <div class="challenge-section-wrapper">
+                    <h2><i class="fas fa-lightbulb"></i> Desafios Técnicos e Minhas Soluções</h2>
+                    <div class="challenge-pair">
+                        <div class="challenge-card">
+                            <h3>1. Desafio: Otimização de Modelo para Latência</h3>
+                            <p>O modelo precisava ser leve o suficiente para classificar textos em menos de 100ms, sem comprometer a acurácia, algo difícil com modelos de Deep Learning complexos.</p>
+                        </div>
+                        <div class="solution-card">
+                            <h3>Solução: Quantização e Flask Assíncrono</h3>
+                            <p>Implementei <strong>quantização</strong> do modelo treinado (para reduzir o tamanho e acelerar o tempo de inferência). O <em>endpoint</em> da API foi configurado de forma assíncrona para lidar com múltiplas requisições simultâneas eficientemente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-section">
+                    <h2><i class="fas fa-chart-area"></i> Resultados Alcançados e Impacto do Projeto</h2>
+                    <ul>
+                        <li><i class="fas fa-percent"></i> <strong>Acurácia Final:</strong> 93.5% na classificação de sentimentos em Português.</li>
+                        <li><i class="fas fa-tachometer-alt"></i> <strong>Latência Média (API):</strong> Redução para &lt; 100ms por requisição.</li>
+                        <li><i class="fas fa-code-branch"></i> <strong>Pronto para Produção:</strong> Modelo empacotado e pronto para <em>deployment</em> via Docker.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Desenvolvido por <a href="../index.html#home">PREENCHER SEU NOME</a> | <span class="far fa-copyright"></span> 2024 Todos os direitos reservado.</span>
+    </footer>
+    
+</body>
+</html>

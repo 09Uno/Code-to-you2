@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Caso: Sistema de Automação de Backoffice</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="projeto.css"> 
+    <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo"><a href="../index.html">Portfólio <span>Técnico</span></a></div>
+            <ul class="menu">
+                <li><a href="../index.html#home">Credenciais</a></li>
+                <li><a href="../index.html#skills">Domínio</a></li>
+                <li><a href="../index.html#portfolio">Projetos</a></li>
+                <li><a href="../index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="max-width">
+            <h1 class="title">Sistema de Automação de Backoffice <br> <span>Automação de Processos Complexos com Python/PowerShell</span></h1>
+
+            <div class="overview-section">
+                <div class="info-box">
+                    <h2>🚀 Visão Geral e Contexto</h2>
+                    <p>Criação de um *pipeline* de automação robusto para o setor de Backoffice, responsável pela conciliação de dados de planilhas e sistemas legados. O sistema é um *agente* programado para rodar em horários específicos, lendo arquivos CSV, validando dados e inserindo informações em um sistema de gestão via API/simulação de UI.</p>
+                    
+                    <h3>🛠️ Stack de Tecnologias e Metodologias</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> **Core:** Scripts de tratamento de dados e validação em Python (Pandas).</li>
+                        <li><i class="fab fa-windows"></i> **Execução:** PowerShell (Agendamento, tratamento de ambiente).</li>
+                        <li><i class="fas fa-file-csv"></i> **Entrada/Saída:** Manipulação de arquivos CSV, Excel e XML.</li>
+                        <li><i class="fas fa-shield-alt"></i> **Segurança:** Gerenciamento de credenciais via variáveis de ambiente seguras.</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="LINK_DO_VÍDEO_DEMONSTRAÇÃO" target="_blank" class="btn-demo"><i class="fas fa-desktop"></i> Ver Demonstração de Execução</a>
+                        <a href="LINK_DO_REPOSITORIO_GITHUB" target="_blank" class="btn-github"><i class="fab fa-github"></i> Código Fonte</a>
+                    </div>
+                </div>
+
+                <div class="image-box">
+                    <img src="../image/projeto-automacao-main-mockup.jpg" alt="Mockup Principal do Projeto Automação">
+                </div>
+            </div>
+
+            <h2>💡 Desafios Técnicos e Minhas Soluções</h2>
+            <div class="challenge-section-wrapper">
+                <div class="challenge-pair">
+                    <div class="challenge-card">
+                        <h3>1. Desafio: Robustez em Falhas de UI</h3>
+                        <p>O sistema legado não possuía API, exigindo automação via simulação de interface (RPA). Qualquer mudança visual no sistema quebrava a rotina de automação, exigindo manutenção constante.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Solução: Estratégia Híbrida e Log Detalhado</h3>
+                        <p>Mudei para uma estratégia híbrida: Python para **validação e conciliação** (90% do trabalho) e **PowerShell** apenas para o *login* e envio final de dados (o mínimo de interação com UI). Implementei um sistema de *log* detalhado com *screenshots* em caso de erro de UI.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>🎥 Tour Completo: Assista à Demonstração em Vídeo</h2>
+                <p>Neste vídeo, mostro o script Python tratando um grande volume de dados (10.000 linhas), gerando o relatório final e o agente de automação executando a importação em segundo plano.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="Demonstração do Projeto Automação" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2>📈 Resultados Alcançados e Impacto do Projeto</h2>
+                <ul>
+                    <li><i class="fas fa-chart-line"></i> **Redução de Custo:** Economia de **80 horas/mês** de trabalho manual.</li>
+                    <li><i class="fas fa-bolt"></i> **Velocidade:** Processamento de 10.000 registros em **2 minutos** (antes levava 4 horas).</li>
+                    <li><i class="fas fa-check-circle"></i> **Qualidade:** Redução de erros de conciliação para **0%**.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Desenvolvido por <a href="../index.html#home">PREENCHER SEU NOME</a> | <span class="far fa-copyright"></span> 2024 Todos os direitos reservado.</span>
+    </footer>
+</body>
+</html>

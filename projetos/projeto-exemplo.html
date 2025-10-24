@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Detalhado - [NOME DO PROJETO]</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="projeto.css"> 
+    <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo"><a href="../index.html">Dev. <span>[SEU NOME]</span></a></div>
+            <ul class="menu">
+                <li><a href="../index.html#home">Início</a></li>
+                <li><a href="../index.html#portfolio">Portfólio</a></li>
+                <li><a href="../index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="max-width">
+            <h1 class="title">Nome Completo do Projeto <br> <span>[Subtítulo: Tipo de Solução, ex: Landing Page de Alta Conversão]</span></h1>
+
+            <div class="overview-section">
+                <div class="info-box">
+                    <h2>🚀 Visão Geral e Objetivo do Projeto</h2>
+                    <p>Este projeto foi desenvolvido para a [Nome da Empresa/Cliente], uma [descrição da empresa, ex: startup em ascensão no setor de SaaS para gestão financeira]. O principal objetivo era [descrever o objetivo principal do projeto, ex: criar um sistema web intuitivo para que pequenas e médias empresas pudessem controlar suas finanças de forma eficiente, emitir relatórios e gerenciar fluxo de caixa]. O desafio era [descrever um desafio geral, ex: oferecer uma ferramenta robusta, mas com uma curva de aprendizado baixa e um design moderno].</p>
+                    
+                    <h3>🛠️ Stack de Tecnologias e Metodologias</h3>
+                    <ul>
+                        <li><i class="fab fa-react"></i> **Front-end:** React.js com TypeScript e Next.js para SSR/SSG.</li>
+                        <li><i class="fab fa-node-js"></i> **Back-end:** Node.js com Express e PostgreSQL para o banco de dados.</li>
+                        <li><i class="fas fa-server"></i> **Infraestrutura:** Docker para conteinerização e deploy na AWS (ECS, RDS).</li>
+                        <li><i class="fas fa-cogs"></i> **DevOps:** GitHub Actions para CI/CD automatizado.</li>
+                        <li><i class="fas fa-sitemap"></i> **Metodologia:** Scrum com sprints de duas semanas.</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="LINK_DA_DEMONSTRACAO" target="_blank" class="btn-demo"><i class="fas fa-desktop"></i> Ver Demonstração</a>
+                        <a href="LINK_DO_REPOSITORIO_GITHUB" target="_blank" class="btn-github"><i class="fab fa-github"></i> Código Fonte</a>
+                    </div>
+                </div>
+
+                <div class="image-box">
+                    <img src="../image/projeto-[nome-do-projeto]-main.jpg" alt="Mockup Principal do Projeto [Nome do Projeto]">
+                </div>
+            </div>
+
+            <h2>💡 Desafios Técnicos e Minhas Soluções Inovadoras</h2>
+            <div class="challenge-section-wrapper">
+                <div class="challenge-pair">
+                    <div class="challenge-card">
+                        <h3>1. Desafio: Performance e Tempo de Resposta</h3>
+                        <p>A aplicação necessitava processar um grande volume de transações financeiras em tempo real, exigindo uma API e banco de dados altamente otimizados para evitar gargalos.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Solução: Otimização de Banco de Dados e Caching</h3>
+                        <p>Desenvolvi uma estratégia de índices customizados no PostgreSQL e implementei um sistema de cache com Redis para dados frequentemente acessados, resultando em uma redução de <strong>80% no tempo de resposta da API</strong> para operações críticas.</p>
+                    </div>
+                </div>
+                <div class="challenge-pair">
+                    <div class="challenge-card">
+                        <h3>2. Desafio: Experiência do Usuário (UX) em Telas Complexas</h3>
+                        <p>Os relatórios financeiros e painéis de controle eram naturalmente densos em informações, apresentando um risco de sobrecarregar o usuário e prejudicar a usabilidade.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Solução: Design Progressivo e Visualização de Dados</h3>
+                        <p>Implementei um design "Progressive Disclosure", apresentando informações em etapas. Utilize gráficos interativos com Chart.js e bibliotecas de tabelas avançadas (Ag-Grid) para permitir filtragem e visualização intuitiva de grandes conjuntos de dados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-section">
+                <h2>🎥 Tour Completo: Assista à Demonstração em Vídeo</h2>
+                <p>Neste vídeo, apresento um tour completo pelo sistema, desde o login até a geração de relatórios complexos, destacando as principais funcionalidades e a fluidez da interface.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="Demonstração do Projeto [Nome do Projeto]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h2>📸 Galeria: Uma Exposição do Projeto</h2>
+                <p>Navegue por algumas telas e detalhes de design que compõem o sistema.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../image/galeria/projeto-[nome-do-projeto]-tela1.jpg" alt="Tela de Dashboard">
+                        <div class="caption">Dashboard Interativo</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../image/galeria/projeto-[nome-do-projeto]-tela2.jpg" alt="Tela de Gerenciamento de Clientes">
+                        <div class="caption">Gerenciamento de Clientes</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../image/galeria/projeto-[nome-do-projeto]-tela3.jpg" alt="Tela de Relatórios">
+                        <div class="caption">Relatórios Detalhados</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../image/galeria/projeto-[nome-do-projeto]-tela4.jpg" alt="Tela Mobile">
+                        <div class="caption">Responsividade Mobile</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2>📈 Resultados Alcançados e Impacto do Projeto</h2>
+                <ul>
+                    <li><i class="fas fa-chart-line"></i> Aumento de <strong>60% na produtividade</strong> das empresas usuárias.</li>
+                    <li><i class="fas fa-rocket"></i> Redução de <strong>80% no tempo de resposta</strong> da API.</li>
+                    <li><i class="fas fa-users"></i> Taxa de adoção de usuários de <strong>+90%</strong> no primeiro mês.</li>
+                    <li><i class="fas fa-shield-alt"></i> Conformidade total com a <strong>LGPD/GDPR</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Criado por <a href="../index.html#home">SEU NOME</a> | <span class="far fa-copyright"></span> 2024 Todos os direitos reservados.</span>
+    </footer>
+    
+</body>
+</html>
