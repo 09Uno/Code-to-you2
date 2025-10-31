@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Projeto - Portfólio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="code-symbol">&lt;</span>
+                    Portfolio
+                    <span class="accent">Tech</span>
+                    <span class="code-symbol">/&gt;</span>
+                </a>
+            </div>
+            <a href="../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ====== PROJECT HERO ====== -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <img src="../image/thumb-ia-nlp.jpg" alt="Project Banner">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="max-width">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-info-header">
+                        <div class="project-badge-container">
+                            <span class="project-category">Inteligência Artificial</span>
+                            <span class="project-badge featured">Projeto Destacado</span>
+                        </div>
+                        <h1 class="project-name">Processamento de Linguagem Natural</h1>
+                        <p class="project-tagline">
+                            Modelo de IA para análise de sentimento em tempo real utilizando
+                            técnicas avançadas de NLP e redes neurais
+                        </p>
+                        <div class="project-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <span>1.2K visualizações</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary ripple" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo ao Vivo</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary ripple" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Ver Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MEDIA CAROUSEL (App Store Style) ====== -->
+    <section class="media-carousel-section">
+        <div class="max-width">
+            <h2 class="section-title">Galeria do Projeto</h2>
+            <p class="section-subtitle">Explore capturas de tela e vídeos demonstrativos</p>
+
+            <!-- Main Carousel -->
+            <div class="swiper media-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-item video-item">
+                            <video controls poster="../image/thumb-ia-nlp.jpg">
+                                <source src="./videos/demo.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeo.
+                            </video>
+                            <div class="media-badge">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Vídeo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/thumb-ia-nlp.jpg" data-lightbox="project-gallery">
+                                <img src="../image/thumb-ia-nlp.jpg" alt="Screenshot 1">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-image"></i>
+                                <span>Imagem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/thumb-csharp-api.jpg" data-lightbox="project-gallery">
+                                <img src="../image/thumb-csharp-api.jpg" alt="Screenshot 2">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-image"></i>
+                                <span>Imagem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/thumb-automacao.jpg" data-lightbox="project-gallery">
+                                <img src="../image/thumb-automacao.jpg" alt="Screenshot 3">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-image"></i>
+                                <span>Imagem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Thumbnail Navigation -->
+            <div class="swiper thumbnail-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/thumb-ia-nlp.jpg" alt="Thumbnail 1">
+                            <i class="fas fa-play-circle video-icon"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/thumb-ia-nlp.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/thumb-csharp-api.jpg" alt="Thumbnail 3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/thumb-automacao.jpg" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECT OVERVIEW ====== -->
+    <section class="project-overview">
+        <div class="max-width">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2 class="section-title">Sobre o Projeto</h2>
+                    <div class="overview-content">
+                        <h3>O Problema</h3>
+                        <p>
+                            Empresas recebem milhares de feedbacks diariamente em redes sociais
+                            e plataformas de atendimento, mas não possuem ferramentas eficientes
+                            para analisar sentimentos em tempo real e tomar decisões rápidas.
+                        </p>
+
+                        <h3>A Solução</h3>
+                        <p>
+                            Desenvolvi um modelo de Machine Learning capaz de classificar textos
+                            em positivo, negativo ou neutro com 94% de acurácia. O sistema processa
+                            até 1000 mensagens por segundo e se integra facilmente via API REST.
+                        </p>
+
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-stack-detailed">
+                            <div class="tech-category">
+                                <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+                                <ul>
+                                    <li>TensorFlow 2.x</li>
+                                    <li>Transformers (BERT)</li>
+                                    <li>Scikit-learn</li>
+                                    <li>NLTK</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4><i class="fas fa-server"></i> Backend</h4>
+                                <ul>
+                                    <li>Python 3.10+</li>
+                                    <li>FastAPI</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Redis Cache</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4><i class="fas fa-cloud"></i> Infraestrutura</h4>
+                                <ul>
+                                    <li>Docker & Kubernetes</li>
+                                    <li>AWS (EC2, S3, RDS)</li>
+                                    <li>CI/CD (GitHub Actions)</li>
+                                    <li>Prometheus & Grafana</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Funcionalidades Principais</h3>
+                        <ul class="features-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Análise em Tempo Real</strong>
+                                    <p>Processamento instantâneo com latência < 100ms</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>API RESTful Completa</strong>
+                                    <p>Documentação OpenAPI/Swagger automática</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Suporte Multilíngue</strong>
+                                    <p>Português, Inglês e Espanhol</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Dashboard de Analytics</strong>
+                                    <p>Visualização de métricas em tempo real</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Escalabilidade Horizontal</strong>
+                                    <p>Deploy em clusters Kubernetes</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="overview-sidebar">
+                    <!-- Project Stats -->
+                    <div class="sidebar-card">
+                        <h3>Estatísticas do Projeto</h3>
+                        <div class="stat-grid">
+                            <div class="stat">
+                                <div class="stat-value">94%</div>
+                                <div class="stat-label">Acurácia</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">1000/s</div>
+                                <div class="stat-label">Req/segundo</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">&lt;100ms</div>
+                                <div class="stat-label">Latência</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">99.9%</div>
+                                <div class="stat-label">Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Tags -->
+                    <div class="sidebar-card">
+                        <h3>Tecnologias</h3>
+                        <div class="tech-tags-sidebar">
+                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-brain"></i> TensorFlow</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> NLP</span>
+                            <span class="tech-tag"><i class="fas fa-server"></i> FastAPI</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="tech-tag"><i class="fas fa-code-branch"></i> Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="sidebar-card">
+                        <h3>Informações</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Status:</span>
+                                <span class="info-value">
+                                    <span class="status-badge active">Em Produção</span>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Duração:</span>
+                                <span class="info-value">6 meses</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Equipe:</span>
+                                <span class="info-value">Solo Project</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Licença:</span>
+                                <span class="info-value">MIT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="sidebar-card">
+                        <h3>Links Úteis</h3>
+                        <div class="links-list">
+                            <a href="#" class="link-item">
+                                <i class="fab fa-github"></i>
+                                <span>Repositório GitHub</span>
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fas fa-book"></i>
+                                <span>Documentação</span>
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo ao Vivo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RESULTS & IMPACT ====== -->
+    <section class="results-section">
+        <div class="max-width">
+            <h2 class="section-title">Resultados e Impacto</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Aumento de Eficiência</h3>
+                    <p class="result-value">+300%</p>
+                    <p>Redução no tempo de análise de feedbacks</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Economia de Custos</h3>
+                    <p class="result-value">R$ 50K/mês</p>
+                    <p>Economia em processos manuais de análise</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Satisfação do Cliente</h3>
+                    <p class="result-value">+45%</p>
+                    <p>Melhoria na resposta a feedbacks negativos</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p class="result-value">99.9%</p>
+                    <p>Disponibilidade do sistema em produção</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CODE SNIPPET ====== -->
+    <section class="code-section">
+        <div class="max-width">
+            <h2 class="section-title">Exemplo de Uso da API</h2>
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="code-lang">Python</span>
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <pre><code id="codeBlock">import requests
+
+# Endpoint da API
+url = "https://api.sentimento.com/analyze"
+
+# Dados para análise
+payload = {
+    "text": "Este produto é incrível! Recomendo muito!",
+    "language": "pt-BR"
+}
+
+# Fazer requisição
+response = requests.post(url, json=payload)
+result = response.json()
+
+print(f"Sentimento: {result['sentiment']}")
+print(f"Confiança: {result['confidence']:.2%}")
+# Output: Sentimento: positive
+#         Confiança: 96.50%</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NEXT PROJECT ====== -->
+    <section class="next-project-section">
+        <div class="max-width">
+            <h2 class="section-title">Próximo Projeto</h2>
+            <div class="next-project-card">
+                <div class="next-project-image">
+                    <img src="../image/thumb-csharp-api.jpg" alt="Próximo Projeto">
+                </div>
+                <div class="next-project-info">
+                    <span class="project-category">Backend & Microsserviços</span>
+                    <h3>Microsserviço Financeiro C#/.NET</h3>
+                    <p>
+                        API RESTful de alta disponibilidade com arquitetura CQRS,
+                        Event Sourcing e integração bancária
+                    </p>
+                    <a href="./projeto-csharp.html" class="btn btn-primary ripple">
+                        <span>Ver Projeto</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="code-symbol">&lt;</span>
+                Portfolio
+                <span class="accent">Tech</span>
+                <span class="code-symbol">/&gt;</span>
+            </div>
+            <p class="footer-text">
+                Desenvolvido com <i class="fas fa-heart"></i> por <strong>Seu Nome</strong>
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2024 Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="project-page.js"></script>
+
+    <script>
+        // Copy code functionality
+        function copyCode() {
+            const code = document.getElementById('codeBlock').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-copy"></i> Copiar';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

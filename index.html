@@ -3,181 +3,786 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Ciência da Computação - Especialista em IA, C#/.NET e Automações">
     <title>Portfólio Técnico - Seu Nome - C. da Computação</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/SEU_KIT_CODE.js" crossorigin="anonymous"></script>
+
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="scroll-up-btn"><i class="fas fa-chevron-up"></i></div>
-    <a class="whatsapp-btn" href="https://wa.me/5571991391299?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20de%20trabalho." target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- ====== LOADING SCREEN ====== -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="code-brackets">&lt;</span>
+                <span class="loader-name">DEV</span>
+                <span class="code-brackets">/&gt;</span>
+            </div>
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Carregando experiência...</p>
+        </div>
+    </div>
 
-    <nav class="navbar">
+    <!-- ====== CUSTOM CURSOR ====== -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- ====== SCROLL PROGRESS BAR ====== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ====== SCROLL UP BUTTON ====== -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- ====== WHATSAPP BUTTON ====== -->
+    <a class="whatsapp-btn" href="https://wa.me/5571991391299?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20de%20trabalho." target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfólio <span>Técnico</span></a></div>
+            <div class="logo">
+                <a href="#home">
+                    <span class="code-symbol">&lt;</span>
+                    Portfolio
+                    <span class="accent">Tech</span>
+                    <span class="code-symbol">/&gt;</span>
+                </a>
+            </div>
             <ul class="menu">
-                <li><a href="#home">Credenciais</a></li>
-                <li><a href="#skills">Domínio</a></li> 
-                <li><a href="#portfolio">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" class="menu-link">Início</a></li>
+                <li><a href="#about" class="menu-link">Sobre</a></li>
+                <li><a href="#skills" class="menu-link">Skills</a></li>
+                <li><a href="#projects" class="menu-link">Projetos</a></li>
+                <li><a href="#contact" class="menu-link">Contato</a></li>
             </ul>
-            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
+    <!-- ====== HERO SECTION ====== -->
     <section class="home" id="home">
+        <!-- Particles Background -->
+        <div id="particles-js"></div>
+
+        <!-- Animated Blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Formado em</div>
-                <div class="text-2">Ciência da Computação</div>
-                <div class="text-3">Especialista em <span class="typing"></span></div>
-                
-                <div class="credencial-list">
-                    <span class="credencial-item"><i class="fas fa-brain"></i> Inteligência Artificial</span>
-                    <span class="credencial-item"><i class="fas fa-code"></i> C# e .NET</span>
-                    <span class="credencial-item"><i class="fas fa-robot"></i> Automações Complexas</span>
+                <!-- Avatar com border animado -->
+                <div class="avatar-container" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="avatar-border">
+                        <img src="./image/3.png" alt="Avatar Profissional" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Dev+Portfolio&size=200&background=79DE79&color=2A2F4F&bold=true&font-size=0.4'">
+                    </div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Disponível
+                    </div>
                 </div>
-                
-                <a href="#portfolio" class="btn-primary">Ver Estudos de Caso <i class="fas fa-arrow-right"></i></a>
+
+                <!-- Animated Text Reveal -->
+                <div class="text-reveal-container">
+                    <div class="text-1" data-aos="fade-up" data-aos-delay="200">
+                        Olá, eu sou
+                    </div>
+                    <div class="text-2" data-aos="fade-up" data-aos-delay="400">
+                        <span class="shimmer">Seu Nome</span>
+                    </div>
+                    <div class="text-3" data-aos="fade-up" data-aos-delay="600">
+                        <span class="gradient-text">Cientista da Computação</span>
+                    </div>
+                    <div class="text-4" data-aos="fade-up" data-aos-delay="800">
+                        Especialista em <span class="typing"></span>
+                    </div>
+                </div>
+
+                <!-- Animated Statistics Counter -->
+                <div class="stats-container" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Horas de Código</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Certificações</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-coffee"></i></div>
+                        <div class="stat-number" data-target="999">0</div>
+                        <div class="stat-label">Cafés Tomados</div>
+                    </div>
+                </div>
+
+                <!-- Tech Badges -->
+                <div class="tech-badges" data-aos="fade-up" data-aos-delay="1200">
+                    <span class="tech-badge">
+                        <i class="fas fa-brain"></i> IA & ML
+                    </span>
+                    <span class="tech-badge">
+                        <i class="fas fa-code"></i> C# & .NET
+                    </span>
+                    <span class="tech-badge">
+                        <i class="fas fa-robot"></i> Automação
+                    </span>
+                    <span class="tech-badge">
+                        <i class="fas fa-cloud"></i> Cloud
+                    </span>
+                </div>
+
+                <!-- CTA Buttons with Ripple Effect -->
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="1400">
+                    <a href="#projects" class="btn btn-primary ripple">
+                        <span>Ver Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary ripple">
+                        <span>Entre em Contato</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1600">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Role para explorar</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ====== ABOUT SECTION ====== -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">Sobre Mim</h2>
+
+            <div class="about-content">
+                <div class="column left" data-aos="fade-right">
+                    <div class="profile-card">
+                        <img src="./image/4.png" alt="Foto Profissional" onerror="this.src='https://ui-avatars.com/api/?name=Seu+Nome&size=400&background=2A2F4F&color=79DE79&bold=true&font-size=0.3'">
+                        <div class="social-links">
+                            <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right" data-aos="fade-left">
+                    <div class="text-content">
+                        <h3>Formado em <span class="accent">Ciência da Computação</span></h3>
+                        <p>
+                            Sou um desenvolvedor apaixonado por criar soluções tecnológicas inovadoras que
+                            transformam ideias em realidade. Com formação sólida em Ciência da Computação,
+                            combino conhecimento teórico profundo com experiência prática em projetos reais.
+                        </p>
+                        <p>
+                            Especializado em <strong>Inteligência Artificial</strong>, <strong>desenvolvimento C#/.NET</strong>
+                            e <strong>automações complexas</strong>, tenho paixão por resolver problemas desafiadores
+                            e criar sistemas robustos e escaláveis.
+                        </p>
+
+                        <div class="expertise-list">
+                            <div class="expertise-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Arquitetura de Software & Design Patterns</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Machine Learning & Deep Learning</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cloud Computing (Azure/AWS)</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>DevOps & CI/CD</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-download ripple">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SKILLS SECTION ====== -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">Domínio Técnico</h2>
-            <div class="serv-content"> 
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-terminal"></i>
-                        <div class="text">C# & .NET Ecosystem</div>
-                        <p>Domínio em desenvolvimento de sistemas *enterprise* com C# e Frameworks .NET Core e .NET (Web API, Entity Framework, Blazor). Forte experiência em arquitetura de microsserviços.</p>
+            <h2 class="title" data-aos="fade-up">Skills & Tecnologias</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Meu arsenal técnico para criar soluções extraordinárias
+            </p>
+
+            <!-- Tech Icons Grid -->
+            <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="tech-icon-item" data-tech="C#">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <span class="tech-name">C#</span>
+                    <div class="tech-hover-info">
+                        <p>5 anos de experiência</p>
+                        <div class="tech-projects">3 projetos relacionados</div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
+
+                <div class="tech-icon-item" data-tech=".NET">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span class="tech-name">.NET</span>
+                    <div class="tech-hover-info">
+                        <p>5 anos de experiência</p>
+                        <div class="tech-projects">4 projetos relacionados</div>
+                    </div>
+                </div>
+
+                <div class="tech-icon-item" data-tech="Python">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="tech-name">Python</span>
+                    <div class="tech-hover-info">
+                        <p>4 anos de experiência</p>
+                        <div class="tech-projects">5 projetos relacionados</div>
+                    </div>
+                </div>
+
+                <div class="tech-icon-item" data-tech="Azure">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <span class="tech-name">Azure</span>
+                    <div class="tech-hover-info">
+                        <p>3 anos de experiência</p>
+                        <div class="tech-projects">2 projetos relacionados</div>
+                    </div>
+                </div>
+
+                <div class="tech-icon-item" data-tech="Docker">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <span class="tech-name">Docker</span>
+                    <div class="tech-hover-info">
+                        <p>3 anos de experiência</p>
+                        <div class="tech-projects">4 projetos relacionados</div>
+                    </div>
+                </div>
+
+                <div class="tech-icon-item" data-tech="SQL">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="tech-name">SQL</span>
+                    <div class="tech-hover-info">
+                        <p>5 anos de experiência</p>
+                        <div class="tech-projects">6 projetos relacionados</div>
+                    </div>
+                </div>
+
+                <div class="tech-icon-item" data-tech="Git">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <span class="tech-name">Git</span>
+                    <div class="tech-hover-info">
+                        <p>5 anos de experiência</p>
+                        <div class="tech-projects">Todos os projetos</div>
+                    </div>
+                </div>
+
+                <div class="tech-icon-item" data-tech="AI/ML">
+                    <div class="tech-icon-wrapper">
                         <i class="fas fa-brain"></i>
-                        <div class="text">Inteligência Artificial & ML</div>
-                        <p>Desenvolvimento e implementação de modelos de IA e Machine Learning para [ex: processamento de linguagem natural (NLP) e visão computacional]. Experiência com bibliotecas [ex: TensorFlow, PyTorch, ML.NET].</p>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-robot"></i>
-                        <div class="text">Automação & Integração</div>
-                        <p>Criação de soluções de automação complexas usando [ex: RPA, scripts Python/PowerShell]. Integração de APIs e sistemas legados (SOAP/REST), garantindo fluxo de trabalho eficiente.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-cloud"></i>
-                        <div class="text">Cloud & Banco de Dados</div>
-                        <p>Experiência em ambientes Cloud (Azure/AWS) para deployment e escalabilidade. Domínio em modelagem e otimização de bancos de dados relacionais (SQL Server, PostgreSQL).</p>
+                    <span class="tech-name">AI/ML</span>
+                    <div class="tech-hover-info">
+                        <p>2 anos de experiência</p>
+                        <div class="tech-projects">3 projetos relacionados</div>
                     </div>
                 </div>
             </div>
-            <p class="description-text">Minha formação em **Ciência da Computação** me permite aplicar fundamentos teóricos sólidos na resolução de problemas complexos, garantindo a robustez e eficiência das soluções desenvolvidas.</p>
+
+            <!-- Skill Bars -->
+            <div class="skills-bars" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">C# & .NET</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Inteligência Artificial</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Cloud Computing</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Automação & RPA</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Banco de Dados</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificações e Conquistas -->
+            <div class="certifications-section" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="certifications-title">Certificações & Conquistas</h3>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Ciência da Computação</h4>
+                        <p>Bacharelado Completo</p>
+                        <span class="cert-badge">Formado</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h4>Microsoft Azure</h4>
+                        <p>Azure Fundamentals</p>
+                        <span class="cert-badge">AZ-900</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h4>Git & GitHub</h4>
+                        <p>Controle de Versão</p>
+                        <span class="cert-badge">Avançado</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Machine Learning</h4>
+                        <p>Coursera / Google</p>
+                        <span class="cert-badge">Certificado</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h4>Docker & Kubernetes</h4>
+                        <p>Containers e Orquestração</p>
+                        <span class="cert-badge">Certificado</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Hackathons</h4>
+                        <p>Vencedor de 3 hackathons</p>
+                        <span class="cert-badge">Top 3</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <!-- ====== FEATURED PROJECTS SECTION ====== -->
+    <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">Projetos: Estudos de Caso</h2>
-            <div class="carousel owl-carousel">
-                
-                <a href="./projetos/projeto-ia.html" class="project-card">
-                    <div class="card-image" style="background-image: url('./image/thumb-ia-nlp.jpg');"></div>
-                    <div class="card-overlay">
-                        <h3>Processamento de Linguagem Natural (IA)</h3>
-                        <p>Modelo de análise de sentimento em tempo real.</p>
-                        <span class="view-details">Ver Detalhes Técnicos <i class="fas fa-arrow-right"></i></span>
+            <h2 class="title" data-aos="fade-up">Projetos em Destaque</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Estudos de caso que demonstram minhas habilidades técnicas
+            </p>
+
+            <!-- Projects Carousel -->
+            <div class="swiper projects-carousel" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Project Card 1 -->
+                    <div class="swiper-slide">
+                        <article class="project-card">
+                    <div class="project-image">
+                        <img src="./image/bkg.png" alt="Projeto IA NLP">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="./projetos/projeto-ia.html" class="project-link-btn" title="Ver Detalhes">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="Demo Ao Vivo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-badge new">Novo</span>
                     </div>
-                </a>
-                
-                <a href="./projetos/projeto-csharp.html" class="project-card">
-                    <div class="card-image" style="background-image: url('./image/thumb-csharp-api.jpg');"></div>
-                    <div class="card-overlay">
-                        <h3>Microsserviço Financeiro C#/.NET</h3>
-                        <p>API RESTful de alta disponibilidade com CQRS.</p>
-                        <span class="view-details">Ver Detalhes Técnicos <i class="fas fa-arrow-right"></i></span>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Análise de Sentimentos com IA</h3>
+                            <div class="project-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Sistema de análise de sentimentos usando NLP e Deep Learning com 94% de acurácia,
+                            processando 1000 textos por segundo em tempo real.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-brain"></i> TensorFlow</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> NLP</span>
+                            <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+                        </div>
+                        <a href="./projetos/projeto-ia.html" class="project-btn ripple">
+                            Ver Projeto Completo
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                </a>
-                
-                <a href="./projetos/projeto-automacao.html" class="project-card">
-                    <div class="card-image" style="background-image: url('./image/thumb-automacao.jpg');"></div>
-                    <div class="card-overlay">
-                        <h3>Sistema de Automação de Backoffice</h3>
-                        <p>Automação de processos complexos com RPA/PowerShell.</p>
-                        <span class="view-details">Ver Detalhes Técnicos <i class="fas fa-arrow-right"></i></span>
+                        </article>
                     </div>
-                </a>
-                
-                <a href="./projetos/projeto-cloud.html" class="project-card">
-                    <div class="card-image" style="background-image: url('./image/thumb-cloud-db.jpg');"></div>
-                    <div class="card-overlay">
-                        <h3>Plataforma SAAS na AWS</h3>
-                        <p>Arquitetura Cloud com deployment Docker/Kubernetes.</p>
-                        <span class="view-details">Ver Detalhes Técnicos <i class="fas fa-arrow-right"></i></span>
+
+                    <!-- Project Card 2 -->
+                    <div class="swiper-slide">
+                        <article class="project-card">
+                    <div class="project-image">
+                        <img src="./image/1.png" alt="Projeto C# API">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="./projetos/projeto-csharp.html" class="project-link-btn" title="Ver Detalhes">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="Demo Ao Vivo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-badge featured">Destaque</span>
                     </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Sistema Financeiro com C#/.NET</h3>
+                            <div class="project-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            API bancária completa com microsserviços, implementando CQRS, Event Sourcing
+                            e Domain-Driven Design para alta performance e escalabilidade.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag"><i class="fas fa-code"></i> C#</span>
+                            <span class="tech-tag"><i class="fas fa-server"></i> .NET 8</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> SQL Server</span>
+                            <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                        </div>
+                        <a href="./projetos/projeto-csharp.html" class="project-btn ripple">
+                            Ver Projeto Completo
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="swiper-slide">
+                        <article class="project-card">
+                    <div class="project-image">
+                        <img src="./image/2.png" alt="Projeto Automação">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="./projetos/projeto-automacao.html" class="project-link-btn" title="Ver Detalhes">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="Demo Ao Vivo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Sistema de Automação Inteligente</h3>
+                            <div class="project-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Plataforma RPA para automação de processos empresariais com Python e PowerShell,
+                            reduzindo tempo de operação em 80% e eliminando erros manuais.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag"><i class="fas fa-robot"></i> RPA</span>
+                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-terminal"></i> PowerShell</span>
+                            <span class="tech-tag"><i class="fas fa-cogs"></i> Selenium</span>
+                        </div>
+                        <a href="./projetos/projeto-automacao.html" class="project-btn ripple">
+                            Ver Projeto Completo
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="swiper-slide">
+                        <article class="project-card">
+                    <div class="project-image">
+                        <img src="./image/3.png" alt="Projeto Web App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" title="Ver Detalhes">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" title="Demo Ao Vivo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-badge">Web App</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Dashboard Analytics em React</h3>
+                            <div class="project-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Dashboard interativo de analytics em tempo real com React, TypeScript e Chart.js,
+                            integrando múltiplas APIs e visualizando métricas complexas de negócio.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-tag"><i class="fas fa-code"></i> TypeScript</span>
+                            <span class="tech-tag"><i class="fas fa-chart-bar"></i> Chart.js</span>
+                            <span class="tech-tag"><i class="fas fa-fire"></i> Firebase</span>
+                        </div>
+                        <a href="#" class="project-btn ripple">
+                            Ver Projeto Completo
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next projects-next"></div>
+                <div class="swiper-button-prev projects-prev"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination projects-pagination"></div>
+            </div>
+
+            <div class="view-all-container" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="btn btn-outline ripple">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="fas fa-th"></i>
                 </a>
             </div>
         </div>
     </section>
-    
+
+    <!-- ====== CONTACT SECTION ====== -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contato Profissional</h2>
-            <div class="contact-content simple-contact">
-                <div class="icons">
-                    <div class="row">
-                        <i class="fas fa-user-alt"></i>
-                        <div class="info">
-                            <div class="head">Nome</div>
-                            <div class="sub-title">PREENCHER: Seu Nome Completo</div>
+            <h2 class="title" data-aos="fade-up">Vamos Trabalhar Juntos?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Estou disponível para novos projetos e oportunidades
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h3>Email</h3>
+                        <p>seu-email@dominio.com</p>
+                        <a href="mailto:seu-email@dominio.com" class="contact-link">
+                            Enviar email <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info">
-                            <div class="head">Localização</div>
-                            <div class="sub-title">PREENCHER: Cidade, Estado (Disponibilidade Remota)</div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
                         </div>
+                        <h3>LinkedIn</h3>
+                        <p>@seu-perfil-linkedin</p>
+                        <a href="#" target="_blank" class="contact-link">
+                            Conectar <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="row">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info">
-                            <div class="head">Email</div>
-                            <div class="sub-title">PREENCHER: seu-email@dominio.com</div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
                         </div>
+                        <h3>GitHub</h3>
+                        <p>@seu-usuario-github</p>
+                        <a href="#" target="_blank" class="contact-link">
+                            Ver repositórios <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="row">
-                        <i class="fab fa-linkedin"></i>
-                        <div class="info">
-                            <div class="head">LinkedIn</div>
-                            <div class="sub-title"><a href="PREENCHER_LINK_LINKEDIN" target="_blank">Acessar Perfil Profissional</a></div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                    </div>
-                    <div class="row">
-                        <i class="fab fa-github"></i>
-                        <div class="info">
-                            <div class="head">GitHub</div>
-                            <div class="sub-title"><a href="PREENCHER_LINK_GITHUB" target="_blank">Ver Repositórios</a></div>
-                        </div>
+                        <h3>Localização</h3>
+                        <p>Salvador, BA</p>
+                        <span class="contact-link">
+                            Remoto disponível <i class="fas fa-globe"></i>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ====== FOOTER ====== -->
     <footer>
-        <span>Desenvolvido por <a href="#home">PREENCHER SEU NOME</a> | <span class="far fa-copyright"></span> 2024 Todos os direitos reservado.</span>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="code-symbol">&lt;</span>
+                Portfolio
+                <span class="accent">Tech</span>
+                <span class="code-symbol">/&gt;</span>
+            </div>
+            <p class="footer-text">
+                Desenvolvido com <i class="fas fa-heart"></i> por <strong>Seu Nome</strong>
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2024 Todos os direitos reservados.
+            </p>
+        </div>
     </footer>
 
+    <!-- ====== SCRIPTS ====== -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Script -->
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
