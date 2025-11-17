@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>IRIS — Sistema de Patrimônio</title>
+    <link rel="stylesheet" href="./project-page.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body class="project-page">
+
+<header class="project-hero">
+    <div class="container">
+        <h1>IRIS — Sistema de Gestão de Patrimônio</h1>
+        <p class="subtitle">Aplicação para cadastro, transferência e confirmação de bens patrimoniais — foco em rastreabilidade e integrações.</p>
+        <div class="project-meta">
+            <span class="meta-item">Cliente: Interno / Demo</span>
+            <span class="meta-item">Função: Fullstack (ênfase Backend)</span>
+            <span class="meta-item">Tecnologias: Angular · TypeScript · ASP.NET Core · Dapper · SQL Server · Docker · MinIO</span>
+        </div>
+    </div>
+</header>
+
+<main class="project-content container">
+    <section class="project-gallery">
+        <div class="gallery-grid">
+            <a href="../image/patrimonio/home.png" data-lightbox="iris">
+                <img src="../image/patrimonio/home.png" alt="IRIS - Home">
+            </a>
+            <a href="../image/patrimonio/dashboard.png" data-lightbox="iris">
+                <img src="../image/patrimonio/dashboard.png" alt="IRIS - Dashboard">
+            </a>
+            <a href="../image/patrimonio/dashboard-adm.png" data-lightbox="iris">
+                <img src="../image/patrimonio/dashboard-adm.png" alt="IRIS - Dashboard Admin">
+            </a>
+        </div>
+    </section>
+
+    <section class="project-overview">
+        <h2>Visão Geral</h2>
+        <p>
+            IRIS é um sistema pensado para gerenciar bens patrimoniais dentro de uma organização. Ele traz funcionalidades de cadastro, movimentação entre setores, transferências e um fluxo de confirmação por parte do responsável pelo destino.
+        </p>
+
+        <h3>Problema</h3>
+        <p>
+            Muitas organizações têm dificuldade em rastrear fisicamente seus bens, confirmar recebimentos e gerar relatórios confiáveis sem processos manuais e planilhas fragilizadas.
+        </p>
+
+        <h3>Solução</h3>
+        <ul>
+            <li>Registro centralizado de bens com histórico de movimentações.</li>
+            <li>Transferências com confirmação por e-mail e notificações.</li>
+            <li>Integração entre frontend Angular e API RESTful em .NET, com armazenamento de arquivos em MinIO.</li>
+        </ul>
+
+        <h3>Fluxos Principais (Frontend)</h3>
+        <ul>
+            <li>Assets list / busca / filtros.</li>
+            <li>Formulários para cadastro e edição de bens (validações locais e server-side).</li>
+            <li>Transferência: seleção de destino e geração de protocolo.</li>
+            <li>Confirmação: responsável recebe e-mail com protocolo e confirma recebimento.</li>
+        </ul>
+
+        <h3>Arquitetura e Backend (resumo)</h3>
+        <p>
+            API construída em ASP.NET Core (.NET 6+), com endpoints REST para CRUD de bens, transferências, e geração de relatórios. Persistência via SQL Server. Acesso a objetos/arquivos (ex.: fotos do bem) via MinIO. Autenticação baseada em JWT e integração com Azure AD para ambientes corporativos quando necessário.
+        </p>
+
+        <h3>Decisões Técnicas Relevantes</h3>
+        <ul>
+            <li>Uso de Dapper para queries diretas e mapeamento simples, mantendo controle fino sobre SQL e performance.</li>
+            <li>Arquivos grandes e fotos guardadas em MinIO para reduzir carga no banco e facilitar backups.</li>
+            <li>Operações idempotentes em endpoints críticos (transferências) para evitar duplicação em tentativas/retries.</li>
+            <li>Workers/Hosted Services para envio de alertas, lembretes e processamento assíncrono de relatórios.</li>
+        </ul>
+
+        <h3>Como Executar (locally)</h3>
+        <h4>Frontend (Angular)</h4>
+        <pre>
+# dentro da pasta frontend (exemplo)
+npm install
+npm run start
+        </pre>
+
+        <h4>Backend (.NET)</h4>
+        <pre>
+# restaurar e rodar a API
+dotnet restore
+dotnet run --project Iris.Api/Iris.Api.csproj
+        </pre>
+
+        <h4>Dependências externas</h4>
+        <ul>
+            <li>SQL Server - string de conexão em appsettings.json</li>
+            <li>MinIO - endpoint e credenciais configuráveis via variáveis de ambiente</li>
+        </ul>
+
+        <h3>Stack Tecnológico</h3>
+        <p>Angular · TypeScript · HTML/CSS · ASP.NET Core · C# · Dapper · SQL Server · MinIO · Docker · JWT · Azure AD (opcional)</p>
+
+        <h3>Links</h3>
+        <ul>
+            <li><a href="#">Código (GitHub) — (link privado)</a></li>
+            <li><a href="#">Demo / Deploy — (link opcional)</a></li>
+        </ul>
+
+        <h3>Notas e Observações</h3>
+        <p>
+            Este projeto reúne conhecimentos de backend (autenticação, idempotência, integrações de armazenamento) e frontend (Angular, UX para confirmação/transferência). A versão publicada aqui é um resumo demonstrativo; código e deploys podem estar em repositórios privados por exigência do cliente.
+        </p>
+    </section>
+
+</main>
+
+<footer class="project-footer">
+    <div class="container">
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Voltar ao portfólio</a>
+    </div>
+</footer>
+
+<script src="./project-page.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

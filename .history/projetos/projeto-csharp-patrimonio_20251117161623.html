@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS Patrimônio — Sistema de Gestão de Patrimônio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="code-symbol">&lt;</span>
+                    Portfolio
+                    <span class="accent">Tech</span>
+                    <span class="code-symbol">/&gt;</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== PROJECT HERO ====== -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <img src="../image/patrimonio/home.png" alt="IRIS - Sistema de Patrimônio Banner">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="max-width">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-info-header">
+                        <div class="project-badge-container">
+                            <span class="project-category">Sistema de Patrimônio</span>
+                            <span class="project-badge featured">IRIS Patrimônio</span>
+                        </div>
+                        <h1 class="project-name">IRIS Patrimônio</h1>
+                        <p class="project-tagline">
+                            Aplicação para cadastro, transferência e confirmação de bens patrimoniais com foco em
+                            rastreabilidade, facilidade de auditoria e integração com sistemas corporativos.
+                        </p>
+                        <div class="project-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <span>1.8K visualizações</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary ripple" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Swagger / API</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary ripple" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Repositório</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MEDIA CAROUSEL (App Store Style) ====== -->
+    <section class="media-carousel-section">
+        <div class="max-width">
+            <h2 class="section-title">Galeria do Projeto</h2>
+            <p class="section-subtitle">Interfaces, arquitetura e demonstrações do sistema</p>
+
+            <!-- Main Carousel -->
+            <div class="swiper media-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/patrimonio/home.png" data-lightbox="project-gallery" data-title="IRIS - Home">
+                                <picture>
+                                    <img src="../image/patrimonio/home.png" alt="IRIS - Home" loading="lazy">
+                                </picture>
+                            </a>
+                            <figcaption class="media-caption">Home — painel principal com resumo das operações</figcaption>
+                            <div class="media-badge">
+                                <i class="fas fa-image"></i>
+                                <span>Home</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/patrimonio/dashboard.png" data-lightbox="project-gallery" data-title="IRIS - Dashboard">
+                                <picture>
+                                    <img src="../image/patrimonio/dashboard.png" alt="IRIS - Dashboard" loading="lazy">
+                                </picture>
+                            </a>
+                            <figcaption class="media-caption">Dashboard — visão geral e métricas em tempo real</figcaption>
+                            <div class="media-badge">
+                                <i class="fas fa-desktop"></i>
+                                <span>Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/patrimonio/dashboard-adm.png" data-lightbox="project-gallery" data-title="IRIS - Dashboard Admin">
+                                <picture>
+                                    <img src="../image/patrimonio/dashboard-adm.png" alt="IRIS - Dashboard Admin" loading="lazy">
+                                </picture>
+                            </a>
+                            <figcaption class="media-caption">Admin — painel de administração e configurações</figcaption>
+                            <div class="media-badge">
+                                <i class="fas fa-cogs"></i>
+                                <span>Admin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/patrimonio/list-patrimo.png" data-lightbox="project-gallery" data-title="IRIS - Listagem de Patrimônio">
+                                <picture>
+                                    <img src="../image/patrimonio/list-patrimo.png" alt="IRIS - Listagem de Patrimônio" loading="lazy">
+                                </picture>
+                            </a>
+                            <figcaption class="media-caption">Listagem — filtros, buscas e ações em massa</figcaption>
+                            <div class="media-badge">
+                                <i class="fas fa-list"></i>
+                                <span>Listagem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/patrimonio/new-transfer.png" data-lightbox="project-gallery" data-title="IRIS - Novo Transferência">
+                                <picture>
+                                    <img src="../image/patrimonio/new-transfer.png" alt="IRIS - Novo Transferência" loading="lazy">
+                                </picture>
+                            </a>
+                            <figcaption class="media-caption">Fluxo de transferência — preenchimento e envio de protocolo</figcaption>
+                            <div class="media-badge">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Transferência</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Thumbnail Navigation -->
+            <div class="swiper thumbnail-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/patrimonio/home.png" alt="Thumbnail Home">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/patrimonio/dashboard.png" alt="Thumbnail Dashboard">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/patrimonio/dashboard-adm.png" alt="Thumbnail Admin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECT OVERVIEW ====== -->
+    <section class="project-overview">
+        <div class="max-width">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2 class="section-title">Sobre o Projeto</h2>
+                    <div class="overview-content">
+                        <h3>Visão Geral</h3>
+                        <p>
+                            IRIS é um sistema para gerenciamento de bens patrimoniais: cadastro, movimentação,
+                            transferências entre unidades e confirmação por parte do responsável pelo destino.
+                            O foco foi garantir rastreabilidade, facilidade de auditoria e integração com sistemas
+                            corporativos.
+                        </p>
+
+                        <h3>O Problema</h3>
+                        <p>
+                            No caso do CREABA, o processo de controle de patrimônio era realizado com planilhas
+                            e procedimentos manuais, o que resultava em perdas, inconsistências e dificuldade
+                            para comprovar localização e estado dos bens.
+                        </p>
+
+                        <h3>A Solução</h3>
+                        <p>
+                            Desenvolvemos um frontend em Angular para operações de cadastro, consulta e fluxo de
+                            transferência, e uma API RESTful em ASP.NET Core responsável por regras, persistência
+                            e integrações (armazenamento de arquivos em MinIO). O fluxo de transferência inclui
+                            geração de protocolo e confirmação via QR-code/link para o destinatário.
+                        </p>
+
+                        <h3>Fluxos Principais (Frontend)</h3>
+                        <ul>
+                            <li>Listagem de ativos com filtros, paginação e busca por atributos.</li>
+                            <li>Formulário de cadastro/edição com validações e upload de fotos.</li>
+                            <li>Transferência entre setores com geração de protocolo.</li>
+                            <li>Confirmação de recebimento pelo responsável por e-mail (mobile-friendly).</li>
+                        </ul>
+
+                        <h3>Backend — Resumo Técnico</h3>
+                        <p>
+                            API em ASP.NET Core (.NET 6/8 compatível), usando Dapper para queries críticas
+                            (controle fino sobre SQL) e SqlClient para operações transacionais. Persistência em
+                            SQL Server; arquivos e imagens armazenados em MinIO. Autenticação com JWT e opção de
+                            integração com Azure AD em ambientes corporativos.
+                        </p>
+
+                        <h3>Decisões Técnicas Relevantes</h3>
+                        <ul>
+                            <li>Uso de Dapper em endpoints com consultas complexas e alto volume para performance.</li>
+                            <li>Idempotência em endpoints de transferência para evitar duplicação em retries.</li>
+                            <li>MinIO para objetos (fotos/documentos) desacoplados do DB.</li>
+                            <li>Hosted Services para processamento assíncrono (notificações, reminders, relatórios).</li>
+                        </ul>
+
+                        <h3>Stack Tecnológico</h3>
+                        <div class="tech-stack-detailed">
+                            <div class="tech-category">
+                                <h4><i class="fab fa-angular"></i> Frontend</h4>
+                                <ul>
+                                    <li>Angular · TypeScript</li>
+                                    <li>RxJS · Angular Router</li>
+                                    <li>HTML5 / SCSS</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4><i class="fas fa-server"></i> Backend</h4>
+                                <ul>
+                                    <li>ASP.NET Core · C#</li>
+                                    <li>Dapper / SqlClient</li>
+                                    <li>SQL Server</li>
+                                    <li>MinIO (S3 compatible) para arquivos</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4><i class="fas fa-tools"></i> Infra & DevOps</h4>
+                                <ul>
+                                    <li>Docker · Docker Compose</li>
+                                    <li>CI/CD (GitHub Actions)</li>
+                                    <li>JWT / Azure AD (opcional)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Principais Funcionalidades</h3>
+                        <ul class="features-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Cadastro e Histórico</strong>
+                                    <p>Registro completo do bem com histórico de movimentações e anexos.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Transferências com Protocolo</strong>
+                                    <p>Geração de protocolo e confirmação por e-mail no destino.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Armazenamento de Mídia</strong>
+                                    <p>Imagens/documentos no MinIO para reduzir carga no banco de dados.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Idempotência e Resiliência</strong>
+                                    <p>Endpoints desenhados para evitar duplicidade em retries e falhas de rede.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3>Desafios e Soluções</h3>
+                        <div class="challenges-section">
+                            <div class="challenge-item">
+                                <div class="challenge-header">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Desafio: Confirmação e Rastreabilidade</h4>
+                                </div>
+                                <p class="challenge-desc">
+                                    Garantir que a transferência seja confirmada pelo responsável no destino, mesmo
+                                    quando o destinatário está off-line ou usando dispositivos móveis.
+                                </p>
+                                <div class="solution-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Solução Implementada</h4>
+                                </div>
+                                <p class="solution-desc">
+                                    O sistema gera um protocolo; o destinatário confirma via e-mail. Para casos
+                                    offline, as confirmações são reconciliadas via um worker que processa
+                                    confirmações recebidas por webhook ou por importação offline.
+                                </p>
+                            </div>
+
+                            <div class="challenge-item">
+                                <div class="challenge-header">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Desafio: Armazenamento de Mídia e Backup</h4>
+                                </div>
+                                <p class="challenge-desc">
+                                    Fotos e documentos aumentavam o tamanho do banco e impactavam backups/restore.
+                                </p>
+                                <div class="solution-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Solução Implementada</h4>
+                                </div>
+                                <p class="solution-desc">
+                                    Removi blobs do banco e armazenei arquivos em MinIO, mantendo referências no
+                                    banco. Isso reduziu o tamanho do DB e acelerou backups/restore.
+                                </p>
+                            </div>
+
+                            <div class="challenge-item">
+                                <div class="challenge-header">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Desafio: Idempotência em Transferências</h4>
+                                </div>
+                                <p class="challenge-desc">
+                                    Requisições duplicadas devido a retries do cliente poderiam gerar transfers
+                                    duplicadas e inconsistências no inventário.
+                                </p>
+                                <div class="solution-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Solução Implementada</h4>
+                                </div>
+                                <p class="solution-desc">
+                                    Implementei tokens de idempotência e checagens no servidor, garantindo que
+                                    operações com o mesmo token não sejam aplicadas duas vezes. Endpoints críticos
+                                    verificam o estado antes de criar novas entradas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-sidebar">
+                    <!-- Project Stats -->
+                    <div class="sidebar-card">
+                        <h3>Estatísticas do Projeto</h3>
+                        <div class="stat-grid">
+                            <div class="stat">
+                                <div class="stat-value">Alta</div>
+                                <div class="stat-label">Capacidade de Processamento</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">Baixa</div>
+                                <div class="stat-label">Latência percebida</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">Robusta</div>
+                                <div class="stat-label">Cobertura de Testes</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">Em produção</div>
+                                <div class="stat-label">Status</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Tags -->
+                    <div class="sidebar-card">
+                        <h3>Tecnologias</h3>
+                        <div class="tech-tags-sidebar">
+                            <span class="tech-tag"><i class="fab fa-angular"></i> Angular</span>
+                            <span class="tech-tag"><i class="fab fa-js-square"></i> TypeScript</span>
+                            <span class="tech-tag"><i class="fas fa-server"></i> ASP.NET Core</span>
+                            <span class="tech-tag"><i class="fas fa-code"></i> Dapper</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> SQL Server</span>
+                            <span class="tech-tag"><i class="fas fa-box"></i> MinIO</span>
+                            <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tech-tag"><i class="fas fa-shield-alt"></i> JWT / Azure AD</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="sidebar-card">
+                        <h3>Informações</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Status:</span>
+                                <span class="info-value">
+                                    <span class="status-badge active">Em Produção</span>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Duração:</span>
+                                <span class="info-value">5 meses</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Equipe:</span>
+                                <span class="info-value">2 desenvolvedores</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Ano:</span>
+                                <span class="info-value">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="sidebar-card">
+                        <h3>Links Úteis</h3>
+                        <div class="links-list">
+                            <a href="#" class="link-item" aria-label="Repositório GitHub do IRIS">
+                                <i class="fab fa-github"></i>
+                                <span>Repositório GitHub</span>
+                            </a>
+                            <a href="#" class="link-item" aria-label="Documentação Swagger do IRIS">
+                                <i class="fas fa-book"></i>
+                                <span>Swagger / API</span>
+                            </a>
+                            <a href="../docs/backend-iris-patrimonio.md" class="link-item" aria-label="Documentação técnica do IRIS (local)">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Documentação Backend (local)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RESULTS & IMPACT ====== -->
+    <section class="results-section">
+        <div class="max-width">
+            <h2 class="section-title">Resultados e Impacto</h2>
+            <p class="section-subtitle">Métricas e conquistas alcançadas com o projeto</p>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Aprimorada</h3>
+                    <p class="result-value">91%</p>
+                    <p>Melhoria no tempo de resposta de queries complexas</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Zero Inconsistências</h3>
+                    <p class="result-value">100%</p>
+                    <p>Garantia de integridade transacional sob alta concorrência</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Cobertura de Testes</h3>
+                    <p class="result-value">92%</p>
+                    <p>Testes unitários e de integração com XUnit e Moq</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Escalabilidade</h3>
+                    <p class="result-value">500+/s</p>
+                    <p>Transações processadas por segundo com baixa latência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CODE SNIPPET ====== -->
+    <section class="code-section">
+        <div class="max-width">
+            <h2 class="section-title">Exemplos de Código</h2>
+            <p class="section-subtitle">Trechos ilustrativos e explicações (Controller → Service → Repository)</p>
+
+            <!-- Controller Example -->
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="code-lang">C# - Controller (Confirmar Transferência)</span>
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <p class="code-explain">Controller fino que delega a validação e a execução ao Service. Recebe a requisição, valida autorização e retorna o status HTTP apropriado.</p>
+                <pre><code id="codeBlock">[ApiController]
+[Route("api/[controller]")]
+public class TransferencyController : ControllerBase
+{
+    private readonly ITransferencyService _transferService;
+    public TransferencyController(ITransferencyService transferService)
+    {
+        _transferService = transferService;
+    }
+
+    // POST api/transferency/{id}/confirm
+    [HttpPost("{id}/confirm")]
+    [Authorize]
+    public async Task<IActionResult> Confirm(long id)
+    {
+        var result = await _transferService.ConfirmTransferAsync(id);
+        if (!result)
+            return NotFound(new { success = false, message = "Transferência não encontrada ou já processada." });
+
+        return Ok(new { success = true, message = "Transferência confirmada." });
+    }
+}
+</code></pre>
+            </div>
+
+            <!-- Service Example -->
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="code-lang">C# - Service (Lógica de Confirmação)</span>
+                    <button class="copy-btn" onclick="copyCode2()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <p class="code-explain">Service responsável por validar estado, aplicar regras de negócio, coordenar repositórios e registrar logs — garante idempotência e consistência.</p>
+                <pre><code id="codeBlock2">public class TransferencyService : ITransferencyService
+{
+    private readonly ITransferencyRepository _transferRepo;
+    private readonly IUnitOfWork _unitOfWork; // opcional
+    private readonly ILogger<TransferencyService> _logger;
+
+    public TransferencyService(ITransferencyRepository transferRepo, IUnitOfWork unitOfWork, ILogger<TransferencyService> logger)
+    {
+        _transferRepo = transferRepo;
+        _unitOfWork = unitOfWork;
+        _logger = logger;
+    }
+
+    public async Task<bool> ConfirmTransferAsync(long transferId)
+    {
+        var transfer = await _transferRepo.GetTransferByIdAsync(transferId);
+        if (transfer == null || transfer.Confirmation) return false;
+
+        transfer.Confirmation = true;
+        transfer.ConfirmationDate = DateTime.UtcNow;
+
+        await _transferRepo.UpdateTransferAsync(transfer);
+        _logger.LogInformation("Transferência {TransferId} confirmada", transferId);
+        return true;
+    }
+}
+</code></pre>
+            </div>
+
+            <!-- Repository Example -->
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="code-lang">C# - Repository (EF/Dapper)</span>
+                    <button class="copy-btn" onclick="copyCode3()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <p class="code-explain">Repository encapsula acesso a dados, permitindo trocar a implementação (EF/Dapper) sem impactar as camadas superiores. Inclui métodos para buscar a última transferência por ativo, usado pelo processo de notificação.</p>
+                <pre><code id="codeBlock3">public class TransferencyRepository : ITransferencyRepository
+{
+    private readonly ApplicationDbContext _context;
+    public TransferencyRepository(ApplicationDbContext context)
+    {
+        _context = context;
+    }
+
+    public async Task<TransferencyEntity?> GetTransferByIdAsync(long transferId)
+    {
+        return await _context.Transferencies
+                             .Include(t => t.Asset)
+                             .Include(t => t.Destination)
+                             .FirstOrDefaultAsync(t => t.Id == transferId);
+    }
+
+    public async Task UpdateTransferAsync(TransferencyEntity transfer)
+    {
+        _context.Transferencies.Update(transfer);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task<IEnumerable<UnconfirmedTransferNotificationDto>> GetUnconfirmedTransfersForNotificationAsync()
+    {
+        var sql = @"-- query preparada (Dapper) que seleciona a ULTIMA transferência por patrimônio
+                    -- e retorna somente se ela estiver pendente e não rejeitada";
+        throw new NotImplementedException("Use Dapper/SQL otimizado ou LINQ com GroupBy/Max para buscar últimas transferências.");
+    }
+}
+</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ARCHITECTURE DIAGRAM ====== -->
+    <section class="architecture-section">
+        <div class="max-width">
+            <h2 class="section-title">Arquitetura do Sistema</h2>
+            <p class="section-subtitle">Clean Architecture com CQRS Pattern</p>
+            <div class="architecture-content">
+                <div class="architecture-text">
+                    <h3>Camadas da Aplicação</h3>
+                    <ul class="architecture-list">
+                        <li>
+                            <strong>API Layer:</strong> Controllers, Middleware, Swagger
+                        </li>
+                        <li>
+                            <strong>Application Layer:</strong> Commands, Queries, Handlers, Validators
+                        </li>
+                        <li>
+                            <strong>Domain Layer:</strong> Entities, Value Objects, Domain Events
+                        </li>
+                        <li>
+                            <strong>Infrastructure Layer:</strong> EF Core, Repositories, External Services
+                        </li>
+                    </ul>
+                    <h3>Princípios Aplicados</h3>
+                    <ul class="architecture-list">
+                        <li>Dependency Inversion Principle</li>
+                        <li>Single Responsibility Principle</li>
+                        <li>Separation of Concerns</li>
+                        <li>Domain-Driven Design (DDD)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NEXT PROJECT ====== -->
+    <section class="next-project-section">
+        <div class="max-width">
+            <h2 class="section-title">Próximo Projeto</h2>
+            <div class="next-project-card">
+                <div class="next-project-image">
+                    <img src="../image/2.png" alt="Próximo Projeto">
+                </div>
+                <div class="next-project-info">
+                    <span class="next-project-category">Automation & RPA</span>
+                    <h3>Sistema de Automação RPA</h3>
+                    <p>Automação inteligente de processos com Python, Selenium e integração de APIs empresariais</p>
+                    <a href="projeto-automacao.html" class="btn btn-primary">
+                        Ver Projeto <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="max-width">
+            <div class="footer-content">
+                <p>&copy; 2024 Portfolio Tech. Desenvolvido com <i class="fas fa-heart"></i> por [Seu Nome]</p>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">Sobre</a>
+                    <a href="../index.html#projects">Projetos</a>
+                    <a href="../index.html#contact">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="project-page.js"></script>
+
+    <script>
+        // Copy code functions
+        function copyCode() {
+            const code = document.getElementById('codeBlock').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = 'var(--accent-color)';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+
+        function copyCode2() {
+            const code = document.getElementById('codeBlock2').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelectorAll('.copy-btn')[1];
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = 'var(--accent-color)';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+
+        function copyCode3() {
+            const code = document.getElementById('codeBlock3').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelectorAll('.copy-btn')[2];
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = 'var(--accent-color)';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

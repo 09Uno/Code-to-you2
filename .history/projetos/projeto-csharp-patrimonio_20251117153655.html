@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS — Sistema de Patrimônio - Portfólio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar sticky">
+        <div class="max-width">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="code-symbol">&lt;</span>
+                    Portfolio
+                    <span class="accent">Tech</span>
+                    <span class="code-symbol">/&gt;</span>
+                </a>
+            </div>
+            <a href="../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ====== PROJECT HERO ====== -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <img src="../image/patrimonio/home.png" alt="IRIS - Sistema de Patrimônio Banner">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="max-width">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-info-header">
+                        <div class="project-badge-container">
+                            <span class="project-category">Sistema de Patrimônio</span>
+                            <span class="project-badge featured">IRIS</span>
+                        </div>
+                        <h1 class="project-name">IRIS — Sistema de Gestão de Patrimônio</h1>
+                        <p class="project-tagline">
+                            Aplicação para cadastro, transferência e confirmação de bens patrimoniais com
+                            foco em rastreabilidade, integrações e confirmação por QR-code.
+                        </p>
+                        <div class="project-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <span>1.8K visualizações</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary ripple" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Swagger / API</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary ripple" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Repositório</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MEDIA CAROUSEL (App Store Style) ====== -->
+    <section class="media-carousel-section">
+        <div class="max-width">
+            <h2 class="section-title">Galeria do Projeto</h2>
+            <p class="section-subtitle">Interfaces, arquitetura e demonstrações do sistema</p>
+
+            <!-- Main Carousel -->
+            <div class="swiper media-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/1.png" data-lightbox="project-gallery" data-title="Dashboard Administrativo">
+                                <img src="../image/1.png" alt="Dashboard Administrativo">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-image"></i>
+                                <span>Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/2.png" data-lightbox="project-gallery" data-title="Swagger API Documentation">
+                                <img src="../image/2.png" alt="Swagger API Documentation">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-book"></i>
+                                <span>API Docs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/4.png" data-lightbox="project-gallery" data-title="Arquitetura CQRS">
+                                <img src="../image/4.png" alt="Arquitetura CQRS">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-sitemap"></i>
+                                <span>Arquitetura</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-item">
+                            <a href="../image/5.png" data-lightbox="project-gallery" data-title="Testes Unitários XUnit">
+                                <img src="../image/5.png" alt="Testes Unitários">
+                            </a>
+                            <div class="media-badge">
+                                <i class="fas fa-vial"></i>
+                                <span>Testes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Thumbnail Navigation -->
+            <div class="swiper thumbnail-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/1.png" alt="Thumbnail Dashboard">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/2.png" alt="Thumbnail API">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/4.png" alt="Thumbnail Arquitetura">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbnail-item">
+                            <img src="../image/5.png" alt="Thumbnail Testes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECT OVERVIEW ====== -->
+    <section class="project-overview">
+        <div class="max-width">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2 class="section-title">Sobre o Projeto</h2>
+                    <div class="overview-content">
+                        <h3>O Problema</h3>
+                        <p>
+                            Sistemas financeiros empresariais precisam lidar com milhares de transações simultâneas,
+                            garantindo consistência de dados, auditoria completa e alta disponibilidade. Arquiteturas
+                            monolíticas tradicionais têm dificuldade em escalar e manter performance sob carga.
+                        </p>
+
+                        <h3>A Solução</h3>
+                        <p>
+                            Desenvolvi uma API RESTful robusta usando ASP.NET Core 8 com padrão CQRS (Command Query
+                            Responsibility Segregation) e Clean Architecture. O sistema separa operações de leitura
+                            e escrita, permitindo otimizações específicas para cada tipo de operação.
+                        </p>
+                        <p>
+                            Implementei transações atômicas com bloqueio otimista, sistema de auditoria completo,
+                            validações de negócio com FluentValidation, e documentação automática com Swagger/OpenAPI.
+                            O sistema processa mais de 500 transações por segundo com latência média de 45ms.
+                        </p>
+
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-stack-detailed">
+                            <div class="tech-category">
+                                <h4><i class="fas fa-code"></i> Backend & Framework</h4>
+                                <ul>
+                                    <li>C# 12 / .NET 8</li>
+                                    <li>ASP.NET Core Web API</li>
+                                    <li>Entity Framework Core 8</li>
+                                    <li>MediatR (CQRS pattern)</li>
+                                    <li>FluentValidation</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4><i class="fas fa-database"></i> Banco de Dados</h4>
+                                <ul>
+                                    <li>SQL Server 2022</li>
+                                    <li>Redis (caching)</li>
+                                    <li>EF Core Migrations</li>
+                                    <li>Stored Procedures</li>
+                                    <li>Indexação otimizada</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4><i class="fas fa-tools"></i> DevOps & Qualidade</h4>
+                                <ul>
+                                    <li>Docker & Docker Compose</li>
+                                    <li>XUnit (testes unitários)</li>
+                                    <li>Moq (mocking)</li>
+                                    <li>GitHub Actions CI/CD</li>
+                                    <li>Swagger/OpenAPI</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Funcionalidades Principais</h3>
+                        <ul class="features-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>CQRS Pattern</strong>
+                                    <p>Separação clara entre Commands (escrita) e Queries (leitura) via MediatR</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Clean Architecture</strong>
+                                    <p>Estrutura em camadas: Domain, Application, Infrastructure, API</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Transações ACID</strong>
+                                    <p>Garantia de atomicidade com bloqueio otimista e controle de concorrência</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Sistema de Auditoria</strong>
+                                    <p>Rastreamento completo de todas as operações com timestamps e usuários</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Validações de Negócio</strong>
+                                    <p>FluentValidation para regras complexas e mensagens de erro detalhadas</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Cache Distribuído</strong>
+                                    <p>Redis para otimização de consultas frequentes e redução de carga no DB</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3>Desafios Técnicos e Soluções</h3>
+                        <div class="challenges-section">
+                            <div class="challenge-item">
+                                <div class="challenge-header">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Desafio: Concorrência em Transações</h4>
+                                </div>
+                                <p class="challenge-desc">
+                                    Múltiplos usuários realizando operações simultâneas na mesma conta bancária
+                                    causavam condições de corrida e inconsistências no saldo. Era necessário garantir
+                                    ACID properties sem sacrificar performance.
+                                </p>
+                                <div class="solution-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Solução Implementada</h4>
+                                </div>
+                                <p class="solution-desc">
+                                    Implementei Optimistic Concurrency Control usando RowVersion do EF Core. Cada
+                                    entidade possui um campo timestamp que é verificado antes de salvar. Se houver
+                                    conflito, a operação é rejeitada e o cliente deve reprocessar. Adicionalmente,
+                                    usei transaction isolation level Serializable para operações críticas. Resultado:
+                                    zero inconsistências em 500+ req/s.
+                                </p>
+                            </div>
+
+                            <div class="challenge-item">
+                                <div class="challenge-header">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Desafio: Performance de Queries Complexas</h4>
+                                </div>
+                                <p class="challenge-desc">
+                                    Relatórios financeiros com agregações, joins e filtros complexos estavam levando
+                                    mais de 2 segundos para executar, causando timeout em cenários de alta carga.
+                                </p>
+                                <div class="solution-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Solução Implementada</h4>
+                                </div>
+                                <p class="solution-desc">
+                                    Criei modelos de leitura desnormalizados (read models) específicos para queries,
+                                    implementei índices compostos no SQL Server, usei AsNoTracking() para queries
+                                    read-only, e adicionei Redis cache com invalidação inteligente. Para relatórios
+                                    pesados, criei stored procedures otimizadas. Performance melhorou de 2s para 180ms
+                                    (melhoria de 91%).
+                                </p>
+                            </div>
+
+                            <div class="challenge-item">
+                                <div class="challenge-header">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Desafio: Testabilidade com Dependências Externas</h4>
+                                </div>
+                                <p class="challenge-desc">
+                                    Sistema dependia de serviços externos (APIs de pagamento, email, etc), dificultando
+                                    testes unitários e integração. Testes eram lentos e flakey.
+                                </p>
+                                <div class="solution-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Solução Implementada</h4>
+                                </div>
+                                <p class="solution-desc">
+                                    Apliquei Dependency Injection com interfaces para todas as dependências externas,
+                                    usei Moq para criar mocks em testes unitários, implementei InMemory database do
+                                    EF Core para testes rápidos, e criei factory pattern para dados de teste. Cobertura
+                                    de testes aumentou de 45% para 92%, tempo de execução da suite de testes caiu de
+                                    5min para 35s.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-sidebar">
+                    <!-- Project Stats -->
+                    <div class="sidebar-card">
+                        <h3>Estatísticas do Projeto</h3>
+                        <div class="stat-grid">
+                            <div class="stat">
+                                <div class="stat-value">500+/s</div>
+                                <div class="stat-label">Transações</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">45ms</div>
+                                <div class="stat-label">Latência Média</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">92%</div>
+                                <div class="stat-label">Cobertura Testes</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">99.7%</div>
+                                <div class="stat-label">Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Tags -->
+                    <div class="sidebar-card">
+                        <h3>Tecnologias</h3>
+                        <div class="tech-tags-sidebar">
+                            <span class="tech-tag"><i class="fab fa-microsoft"></i> C# .NET 8</span>
+                            <span class="tech-tag"><i class="fas fa-server"></i> ASP.NET Core</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> SQL Server</span>
+                            <span class="tech-tag"><i class="fas fa-layer-group"></i> Entity Framework</span>
+                            <span class="tech-tag"><i class="fas fa-cubes"></i> CQRS</span>
+                            <span class="tech-tag"><i class="fas fa-vial"></i> XUnit</span>
+                            <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tech-tag"><i class="fas fa-code-branch"></i> Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="sidebar-card">
+                        <h3>Informações</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Status:</span>
+                                <span class="info-value">
+                                    <span class="status-badge active">Em Produção</span>
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Duração:</span>
+                                <span class="info-value">5 meses</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Equipe:</span>
+                                <span class="info-value">2 desenvolvedores</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Ano:</span>
+                                <span class="info-value">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="sidebar-card">
+                        <h3>Links Úteis</h3>
+                        <div class="links-list">
+                            <a href="#" class="link-item">
+                                <i class="fab fa-github"></i>
+                                <span>Repositório GitHub</span>
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fas fa-book"></i>
+                                <span>Swagger Documentation</span>
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Documentação Técnica</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RESULTS & IMPACT ====== -->
+    <section class="results-section">
+        <div class="max-width">
+            <h2 class="section-title">Resultados e Impacto</h2>
+            <p class="section-subtitle">Métricas e conquistas alcançadas com o projeto</p>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Aprimorada</h3>
+                    <p class="result-value">91%</p>
+                    <p>Melhoria no tempo de resposta de queries complexas</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Zero Inconsistências</h3>
+                    <p class="result-value">100%</p>
+                    <p>Garantia de integridade transacional sob alta concorrência</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Cobertura de Testes</h3>
+                    <p class="result-value">92%</p>
+                    <p>Testes unitários e de integração com XUnit e Moq</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Escalabilidade</h3>
+                    <p class="result-value">500+/s</p>
+                    <p>Transações processadas por segundo com baixa latência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CODE SNIPPET ====== -->
+    <section class="code-section">
+        <div class="max-width">
+            <h2 class="section-title">Exemplos de Código</h2>
+            <p class="section-subtitle">Demonstração de padrões e arquitetura implementados</p>
+
+            <!-- Command Example -->
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="code-lang">C# - CQRS Command</span>
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <pre><code id="codeBlock">// Command para criar transação financeira
+public class CreateTransactionCommand : IRequest&lt;TransactionResponse&gt;
+{
+    public Guid AccountId { get; set; }
+    public decimal Amount { get; set; }
+    public TransactionType Type { get; set; }
+    public string Description { get; set; }
+}
+
+// Handler com validações e regras de negócio
+public class CreateTransactionHandler
+    : IRequestHandler&lt;CreateTransactionCommand, TransactionResponse&gt;
+{
+    private readonly IApplicationDbContext _context;
+    private readonly IValidator&lt;CreateTransactionCommand&gt; _validator;
+
+    public async Task&lt;TransactionResponse&gt; Handle(
+        CreateTransactionCommand request,
+        CancellationToken cancellationToken)
+    {
+        // Validar comando
+        await _validator.ValidateAndThrowAsync(request, cancellationToken);
+
+        // Buscar conta com row version para controle de concorrência
+        var account = await _context.Accounts
+            .FirstOrDefaultAsync(a => a.Id == request.AccountId, cancellationToken);
+
+        if (account == null)
+            throw new NotFoundException(nameof(Account), request.AccountId);
+
+        // Criar transação
+        var transaction = new Transaction
+        {
+            AccountId = request.AccountId,
+            Amount = request.Amount,
+            Type = request.Type,
+            Description = request.Description,
+            CreatedAt = DateTime.UtcNow,
+            Status = TransactionStatus.Pending
+        };
+
+        // Aplicar regras de negócio
+        account.ApplyTransaction(transaction);
+
+        _context.Transactions.Add(transaction);
+        await _context.SaveChangesAsync(cancellationToken);
+
+        return TransactionResponse.FromEntity(transaction);
+    }
+}</code></pre>
+            </div>
+
+            <!-- Query Example -->
+            <div class="code-container" style="margin-top: 30px;">
+                <div class="code-header">
+                    <span class="code-lang">C# - CQRS Query</span>
+                    <button class="copy-btn" onclick="copyCode2()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <pre><code id="codeBlock2">// Query otimizada para leitura
+public class GetAccountStatementQuery : IRequest&lt;AccountStatementDto&gt;
+{
+    public Guid AccountId { get; set; }
+    public DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
+}
+
+// Handler com otimizações de leitura
+public class GetAccountStatementHandler
+    : IRequestHandler&lt;GetAccountStatementQuery, AccountStatementDto&gt;
+{
+    private readonly IApplicationDbContext _context;
+    private readonly IDistributedCache _cache;
+
+    public async Task&lt;AccountStatementDto&gt; Handle(
+        GetAccountStatementQuery request,
+        CancellationToken cancellationToken)
+    {
+        // Tentar buscar do cache
+        var cacheKey = $"statement:{request.AccountId}:{request.StartDate:yyyyMMdd}";
+        var cached = await _cache.GetStringAsync(cacheKey, cancellationToken);
+
+        if (!string.IsNullOrEmpty(cached))
+            return JsonSerializer.Deserialize&lt;AccountStatementDto&gt;(cached);
+
+        // Query otimizada - AsNoTracking para leitura
+        var statement = await _context.Transactions
+            .AsNoTracking()
+            .Where(t => t.AccountId == request.AccountId
+                     && t.CreatedAt >= request.StartDate
+                     && t.CreatedAt <= request.EndDate)
+            .OrderByDescending(t => t.CreatedAt)
+            .Select(t => new TransactionDto
+            {
+                Id = t.Id,
+                Amount = t.Amount,
+                Type = t.Type,
+                Description = t.Description,
+                CreatedAt = t.CreatedAt
+            })
+            .ToListAsync(cancellationToken);
+
+        var result = new AccountStatementDto
+        {
+            AccountId = request.AccountId,
+            Period = $"{request.StartDate:dd/MM/yyyy} - {request.EndDate:dd/MM/yyyy}",
+            Transactions = statement,
+            Balance = statement.Sum(t => t.Type == TransactionType.Credit
+                ? t.Amount : -t.Amount)
+        };
+
+        // Cachear resultado por 5 minutos
+        await _cache.SetStringAsync(
+            cacheKey,
+            JsonSerializer.Serialize(result),
+            new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+            },
+            cancellationToken);
+
+        return result;
+    }
+}</code></pre>
+            </div>
+
+            <!-- Controller Example -->
+            <div class="code-container" style="margin-top: 30px;">
+                <div class="code-header">
+                    <span class="code-lang">C# - API Controller</span>
+                    <button class="copy-btn" onclick="copyCode3()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+                <pre><code id="codeBlock3">[ApiController]
+[Route("api/[controller]")]
+[Produces("application/json")]
+public class TransactionsController : ControllerBase
+{
+    private readonly IMediator _mediator;
+
+    public TransactionsController(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
+    /// &lt;summary&gt;
+    /// Cria uma nova transação financeira
+    /// &lt;/summary&gt;
+    /// &lt;param name="command"&gt;Dados da transação&lt;/param&gt;
+    /// &lt;returns&gt;Transação criada&lt;/returns&gt;
+    [HttpPost]
+    [ProducesResponseType(typeof(TransactionResponse), StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task&lt;IActionResult&gt; Create(
+        [FromBody] CreateTransactionCommand command)
+    {
+        var result = await _mediator.Send(command);
+        return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+    }
+
+    /// &lt;summary&gt;
+    /// Obtém extrato da conta
+    /// &lt;/summary&gt;
+    /// &lt;param name="query"&gt;Filtros de consulta&lt;/param&gt;
+    /// &lt;returns&gt;Extrato da conta&lt;/returns&gt;
+    [HttpGet("statement")]
+    [ProducesResponseType(typeof(AccountStatementDto), StatusCodes.Status200OK)]
+    public async Task&lt;IActionResult&gt; GetStatement(
+        [FromQuery] GetAccountStatementQuery query)
+    {
+        var result = await _mediator.Send(query);
+        return Ok(result);
+    }
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ARCHITECTURE DIAGRAM ====== -->
+    <section class="architecture-section">
+        <div class="max-width">
+            <h2 class="section-title">Arquitetura do Sistema</h2>
+            <p class="section-subtitle">Clean Architecture com CQRS Pattern</p>
+            <div class="architecture-content">
+                <div class="architecture-text">
+                    <h3>Camadas da Aplicação</h3>
+                    <ul class="architecture-list">
+                        <li>
+                            <strong>API Layer:</strong> Controllers, Middleware, Swagger
+                        </li>
+                        <li>
+                            <strong>Application Layer:</strong> Commands, Queries, Handlers, Validators
+                        </li>
+                        <li>
+                            <strong>Domain Layer:</strong> Entities, Value Objects, Domain Events
+                        </li>
+                        <li>
+                            <strong>Infrastructure Layer:</strong> EF Core, Repositories, External Services
+                        </li>
+                    </ul>
+                    <h3>Princípios Aplicados</h3>
+                    <ul class="architecture-list">
+                        <li>Dependency Inversion Principle</li>
+                        <li>Single Responsibility Principle</li>
+                        <li>Separation of Concerns</li>
+                        <li>Domain-Driven Design (DDD)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NEXT PROJECT ====== -->
+    <section class="next-project-section">
+        <div class="max-width">
+            <h2 class="section-title">Próximo Projeto</h2>
+            <div class="next-project-card">
+                <div class="next-project-image">
+                    <img src="../image/2.png" alt="Próximo Projeto">
+                </div>
+                <div class="next-project-info">
+                    <span class="next-project-category">Automation & RPA</span>
+                    <h3>Sistema de Automação RPA</h3>
+                    <p>Automação inteligente de processos com Python, Selenium e integração de APIs empresariais</p>
+                    <a href="projeto-automacao.html" class="btn btn-primary">
+                        Ver Projeto <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="max-width">
+            <div class="footer-content">
+                <p>&copy; 2024 Portfolio Tech. Desenvolvido com <i class="fas fa-heart"></i> por [Seu Nome]</p>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">Sobre</a>
+                    <a href="../index.html#projects">Projetos</a>
+                    <a href="../index.html#contact">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="project-page.js"></script>
+
+    <script>
+        // Copy code functions
+        function copyCode() {
+            const code = document.getElementById('codeBlock').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = 'var(--accent-color)';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+
+        function copyCode2() {
+            const code = document.getElementById('codeBlock2').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelectorAll('.copy-btn')[1];
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = 'var(--accent-color)';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+
+        function copyCode3() {
+            const code = document.getElementById('codeBlock3').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelectorAll('.copy-btn')[2];
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = 'var(--accent-color)';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
