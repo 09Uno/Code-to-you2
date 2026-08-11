@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <!-- ?v= força o navegador a baixar a versão nova (o nginx guarda css/js por 7 dias).
+       Suba esse número a cada publicação que mexer em style.css ou app.js. -->
+  <link rel="stylesheet" href="style.css?v=2026-08-11" />
 </head>
 <body>
 
@@ -298,6 +300,6 @@
 
   <button class="scroll-up" id="scrollUp" aria-label="Voltar ao topo">↑</button>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2026-08-11"></script>
 </body>
 </html>
