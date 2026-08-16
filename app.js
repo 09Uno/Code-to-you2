@@ -81,7 +81,7 @@
   if (submit) {
     submit.addEventListener("click", function (e) {
       e.preventDefault();
-      var telefone = "5571999941690";
+      var telefone = "5571984056623";
       var cliente = (document.getElementById("cliente") || {}).value || "";
       var mensagem = (document.getElementById("mensagem") || {}).value || "";
       var resp = document.getElementById("respuesta");
